@@ -1,3 +1,3 @@
 function Prueba(params) {
-    return ;
+    return 4;
 }
