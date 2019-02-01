@@ -11,14 +11,15 @@
 
     <h2>Tienda de libros</h2>
     <h2>Las mejores biografias</h2>
-    <button onclick="PeticionJSON()">dfdfdfd</button>
+    <button onclick="PeticionJSON('male')">Hombre</button>
+    <button onclick="PeticionJSON('female')">Mujer</button>
 
     <p id="prueba"></p>
 
 
     <!-- Scripts -->
-    <!-- <script src="library.js"></script> -->
-    <script>
+    <script src="library.js"></script>
+    <!-- <script>
     function PeticionJSON(params) {
             var request = new XMLHttpRequest();
             request.open("GET", "https://randomuser.me/api/?results=5", false);
@@ -30,6 +31,6 @@
             document.getElementById("prueba").innerHTML = people.results[2].email;
 
         }
-    </script>
+    </script> -->
 </body>
 </html>
