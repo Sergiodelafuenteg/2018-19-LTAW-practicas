@@ -1,0 +1,30 @@
+
+body {
+    font-family: Helvetica;
+}
+
+h1, h2{
+    text-align: center;
+}
+.button {
+    font-size: 25px
+}
+
+.image {
+    border-radius: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 55px
+}
+.price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 55px
+}
