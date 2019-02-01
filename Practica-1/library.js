@@ -1,10 +1,10 @@
 
 function PeticionJSON(params) {
-    var www = new XMLHttpRequest();
-    www.open("GET", "https://randomuser.me/api/?results=5", false);
-    www.send()
-    console.log(www.responseType);
-    var people = JSON.parse(www.responseText);
+    var request = new XMLHttpRequest();
+    request.open("GET", "https://randomuser.me/api/?results=5", false);
+    request.send()
+    console.log(request.responseType);
+    var people = JSON.parse(request.responseText);
     console.log(people);
     
     document.getElementById("prueba").innerHTML = people.results[2].email;
