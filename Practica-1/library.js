@@ -11,7 +11,7 @@ function PeticionJSON(gender) {
     // creamos dos subgrupos mujeres y hombres
     var gender_array = people.results.filter(person => person.gender == gender);
     console.log(gender_array);
-    document.getElementById("prueba").innerHTML = "";
+    document.getElementById("visor").innerHTML = ""
     // Montamos el array de "productos"
     gender_array.forEach(user => {
         let productos = document.createElement("ul");
@@ -35,6 +35,6 @@ function PeticionJSON(gender) {
         prod.appendChild(text_price);
         prod.setAttribute("class", "prod")        
         productos.appendChild(prod);
-        document.getElementById('prueba').appendChild(productos);    
+        document.getElementById('visor').appendChild(productos);    
     });
 }
