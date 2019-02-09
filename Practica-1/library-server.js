@@ -8,11 +8,28 @@ http.createServer((req,res) => {
         res.writeHead(200, { "Content-Type": "text/html" });
         var stream = fs.createReadStream('library.html', 'utf8');
         stream.pipe(res);
-     }
+    }
+    if (req.url.split(".")[1] == 'html') {
+        console.log('html');
+        res.writeHead(200, { "Content-Type": "text/html" });
+        let html_path = path.join(__dirname, req.url)
+        console.log(html_path);
 
+        var stream = fs.createReadStream(html_path);
+        stream.pipe(res);
+    }
+    if (req.url.split(".")[1] == 'json') {
+        console.log('json');
+        res.writeHead(200, { "Content-Type": "application/json" });
+        let json_path = path.join(__dirname, req.url)
+        console.log(json_path);
+
+        var stream = fs.createReadStream(json_path);
+        stream.pipe(res);
+    } 
     if (req.url.split(".")[1] == 'js') {
         console.log('javascript');
-        res.writeHead(200, { "Content-Type": "text/javascript" });
+        res.writeHead(200, { "Content-Type": "application/javascript" });
         let js_path = path.join(__dirname, req.url)
         console.log(js_path);
         
