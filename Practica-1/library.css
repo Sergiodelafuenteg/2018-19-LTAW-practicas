@@ -42,8 +42,13 @@ h1 {
 	top:1px;
 }
 
-.divider {
 
+.cesta {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .prod {

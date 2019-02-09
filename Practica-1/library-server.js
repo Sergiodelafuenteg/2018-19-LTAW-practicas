@@ -45,6 +45,24 @@ http.createServer((req,res) => {
         var stream = fs.createReadStream(css_path);
         stream.pipe(res);
     }
+    if ((req.url.split(".")[1] == "jpg") || (req.url.split(".")[1] == "jpeg")) {
+      console.log("image-jpeg-jpg");
+      res.writeHead(200, { "Content-Type": "image/jpeg" });
+      let jpeg_path = path.join(__dirname, req.url);
+      console.log(jpeg_path);
+
+      var stream = fs.createReadStream(jpeg_path);
+      stream.pipe(res);
+    }
+    if (req.url.split(".")[1] == "png") {
+      console.log("png");
+      res.writeHead(200, { "Content-Type": "image/png" });
+      let png_path = path.join(__dirname, req.url);
+      console.log(png_path);
+
+      var stream = fs.createReadStream(png_path);
+      stream.pipe(res);
+    }
      
 }
 ).listen(8080)

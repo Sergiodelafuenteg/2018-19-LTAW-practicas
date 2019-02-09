@@ -42,3 +42,19 @@ function PeticionJSON(gender) {
         document.getElementById('visor').appendChild(productos);    
     });
 }
+function Abrircesta() {
+    
+    
+    
+    var image = document.getElementById('ko')
+    console.log(__dirname);
+    
+    if (image.src === "cesta0.png") {
+        image.src = "cesta1.png"
+        console.log("jojo");
+    } else {
+        image.src = "cesta0.png";
+        console.log("jaja");
+    }
+    
+}
