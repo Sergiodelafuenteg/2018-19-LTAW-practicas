@@ -34,6 +34,8 @@ function PeticionJSON(gender) {
         text_name.setAttribute("class", "name");
         text_price.setAttribute("class", "price");
         butt_add.setAttribute("class", "butt_add");
+        x = user;
+        butt_add.setAttribute("onclick", "Abrircesta(x)");
         prod.appendChild(text_name);
         prod.appendChild(text_price);
         prod.appendChild(butt_add);
@@ -42,19 +44,10 @@ function PeticionJSON(gender) {
         document.getElementById('visor').appendChild(productos);    
     });
 }
-function Abrircesta() {
+function Abrircesta(user) {
+    console.log(user);
     
-    
-    
-    var image = document.getElementById('ko')
-    console.log(__dirname);
-    
-    if (image.src === "cesta0.png") {
-        image.src = "cesta1.png"
-        console.log("jojo");
-    } else {
-        image.src = "cesta0.png";
-        console.log("jaja");
-    }
-    
+    var image = document.getElementById('cesta_icon')
+    image.src = "cesta1.png";
+
 }
