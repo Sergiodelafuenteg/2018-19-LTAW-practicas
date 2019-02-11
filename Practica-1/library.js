@@ -34,7 +34,7 @@ function PeticionJSON(gender) {
         text_name.setAttribute("class", "name");
         text_price.setAttribute("class", "price");
         butt_add.setAttribute("class", "butt_add");
-        x = user;
+        let x = user;
         butt_add.setAttribute("onclick", "Abrircesta(x)");
         prod.appendChild(text_name);
         prod.appendChild(text_price);
@@ -50,4 +50,12 @@ function Abrircesta(user) {
     var image = document.getElementById('cesta_icon')
     image.src = "cesta1.png";
 
+}
+function jojok(params) {
+    var request2 = new XMLHttpRequest();
+    request2.open("GET", "products.json", false);
+    request2.send()
+    console.log(request2.responseType);
+    var people2 = JSON.parse(request2.responseText);
+    console.log(people2);
 }
