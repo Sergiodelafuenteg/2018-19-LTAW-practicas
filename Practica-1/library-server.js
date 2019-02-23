@@ -63,6 +63,15 @@ http.createServer((req,res) => {
       var stream = fs.createReadStream(png_path);
       stream.pipe(res);
     }
+    if (req.url.split(".")[1] == "ico") {
+        console.log("ico");
+        res.writeHead(200, { "Content-Type": "image/x-icon" });
+        let ico_path = path.join(__dirname, req.url);
+        console.log(ico_path);
+
+        var stream = fs.createReadStream(ico_path);
+        stream.pipe(res);
+    }
      
 }
 ).listen(8080)

@@ -1,4 +1,6 @@
 
+var Cesta = [];
+
 function PeticionJSON(gender) {
     // manejamos la peticion para la "tienda"
     // usamos el api randomuser por comodidad
@@ -13,6 +15,7 @@ function PeticionJSON(gender) {
     console.log(gender_array);
     document.getElementById("visor").innerHTML = ""
     // Montamos el array de "productos"
+    
     gender_array.forEach(user => {
         // Creamos los elementos
         let productos = document.createElement("ul");
@@ -34,20 +37,34 @@ function PeticionJSON(gender) {
         text_name.setAttribute("class", "name");
         text_price.setAttribute("class", "price");
         butt_add.setAttribute("class", "butt_add");
-        x = user;
-        butt_add.setAttribute("onclick", "Abrircesta(x)");
+        butt_add.setAttribute("onclick", "Abrircesta()");
         prod.appendChild(text_name);
         prod.appendChild(text_price);
         prod.appendChild(butt_add);
         prod.setAttribute("class", "prod")        
         productos.appendChild(prod);
-        document.getElementById('visor').appendChild(productos);    
+        document.getElementById('visor').appendChild(productos);
+        // Creamos un objeto producto para el array
+        var prod_cesta = {
+            name : user.name.first,
+            image : user.picture.large,
+            precio : user.dob.age
+        }
+        Cesta.push(prod_cesta)
     });
 }
-function Abrircesta(user) {
-    console.log(user);
+function Abrircesta() {
+    console.log(Cesta);
     
     var image = document.getElementById('cesta_icon')
     image.src = "cesta1.png";
 
+}
+function CargarJsonLocal(params) {
+    var request2 = new XMLHttpRequest();
+    request2.open("GET", "products.json", false);
+    request2.send()
+    console.log(request2.responseType);
+    var people2 = JSON.parse(request2.responseText);
+    console.log(people2);
 }
