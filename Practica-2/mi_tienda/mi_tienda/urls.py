@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from mi_tienda.views import mi_function
 
 urlpatterns = [
+    url(r'^hola/', mi_function),
     url(r'^admin/', admin.site.urls),
 ]
