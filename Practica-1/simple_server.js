@@ -1,6 +1,6 @@
-var http = require('http');
-var fs = require('fs');
-var path = require('path')
+const http = require('http');
+const fs = require('fs');
+const path = require('path')
 
 console.log("Arrancando servidor...")
 
