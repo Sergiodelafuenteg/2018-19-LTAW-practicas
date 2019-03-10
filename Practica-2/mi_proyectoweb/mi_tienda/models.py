@@ -10,6 +10,7 @@ class Bicicleta (models.Model):
     name = models.CharField(max_length=200)
     stock = models.IntegerField()
     price = models.FloatField()
+    image = models.CharField(max_length=200)
 
     def __str__(self):
 
@@ -29,6 +30,7 @@ class Disco (models.Model):
 
 class Libro (models.Model):
     name = models.CharField(max_length=200)
+    author = models.CharField(max_length=200)
     stock = models.IntegerField()
     price = models.FloatField()
 

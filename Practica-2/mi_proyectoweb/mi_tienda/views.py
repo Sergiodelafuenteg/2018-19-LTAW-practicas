@@ -26,7 +26,7 @@ def Bicis_view(request):
 
 
 def Libros_view(request):
-    libros = Bicicleta.objects.all()
+    libros = Libro.objects.all()
     return render(request, "products.html", {'products': libros})
 
 

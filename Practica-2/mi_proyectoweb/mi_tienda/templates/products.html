@@ -12,8 +12,9 @@
     <p>hihi</p>
     {% for product in products %}
     <div class='products'>
-        <p>{{ product.name }}</p>
-        <p>{{ product.price }}</p>
+        <img src= '{{ product.image }}' alt="NOPE" id="logo">
+        <span>{{ product.name }}</span>
+        <span>{{ product.price }}</span>
     </div>
     {% endfor %}
 </body>
