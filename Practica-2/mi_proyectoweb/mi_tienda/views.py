@@ -5,13 +5,29 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from .models import Bicicleta
+from .models import Disco
+from .models import Libro
 # Create your views here.
 
 
 def home_view(request):
-    bicicleta = Bicicleta.objects.all()
-    x = 'jojo'
-    return render(request, "index.html", {'bicicleta': bicicleta}, {'x': x})
+    x = 'gfgfgf'
+    return render(request, "index.html", {'x': x})
+
+
+def Discos_view(request):
+    discos = Disco.objects.all()
+    return render(request, "products.html", {'products': discos})
+
+
+def Bicis_view(request):
+    bicicletas = Bicicleta.objects.all()
+    return render(request, "products.html", {'products': bicicletas})
+
+
+def Libros_view(request):
+    libros = Bicicleta.objects.all()
+    return render(request, "products.html", {'products': libros})
 
 
 def list(request):
