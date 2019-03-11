@@ -24,16 +24,11 @@ def Bicis_view(request):
     bicicletas = Bicicleta.objects.all()
     return render(request, "products.html", {'products': bicicletas})
 
+def buscar(request):
+    pass
 
 def Libros_view(request):
     libros = Libro.objects.all()
     return render(request, "products.html", {'products': libros})
 
 
-def list(request):
-    objects = Bicicleta.objects.all()
-    html = "<p>Listado de articulos</p>"
-    for elt in objects:
-        print(elt.name)
-        html += '<p>' + elt.name + ' ' + str(elt.price) + '<p>'
-    return HttpResponse(html)

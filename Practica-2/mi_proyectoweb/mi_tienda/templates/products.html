@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,16 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Products</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script> -->
+    <link rel="stylesheet" href="{% static 'mi-css.css'%}">
+    <!-- <script src="main.js"></script> -->
 </head>
 <body>
     <p>hihi</p>
+    <input type="text">
     {% for product in products %}
     <div class='products'>
-        <img src= '{{ product.image }}' alt="NOPE" id="logo">
-        <span>{{ product.name }}</span>
-        <span>{{ product.price }}</span>
+        <tr>
+            <td><img class="image" src='{{ product.image }}' alt="NOPE" id="logo"></td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+        </tr>
     </div>
     {% endfor %}
 </body>
