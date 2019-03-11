@@ -4,6 +4,7 @@ const path = require('path')
 
 http.createServer((req,res) => {
      console.log('req was: ' + req.url);
+     var cookie = req.headers.cookie;
     if (req.url == '/') {
         res.writeHead(200, { "Content-Type": "text/html" });
         var stream = fs.createReadStream('library.html', 'utf8');
