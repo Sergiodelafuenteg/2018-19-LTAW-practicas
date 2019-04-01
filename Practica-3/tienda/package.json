@@ -1,0 +1,21 @@
+{
+  "name": "hello",
+  "description": "Proyecto hola mundo",
+  "keywords": [
+    "ltaw",
+    "test"
+  ],
+  "version": "0.0.1",
+  "author": "Sergio de la fuente",
+  "main": "library-server.js",
+  "devDependencies": {},
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sergiodelafuenteg/2018-19-LTAW-practicas/tree/master/Practica-1"
+  },
+  "scripts": {
+    "start": "node library-server.js",
+    "test": "node -v"  
+  }
+}
