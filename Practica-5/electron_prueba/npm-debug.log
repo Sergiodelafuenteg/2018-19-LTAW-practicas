@@ -1,0 +1,1201 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'electron-installer-dmg',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData electron-installer-dmg
+8 silly fetchNamedPackageData electron-installer-dmg
+9 silly mapToRegistry name electron-installer-dmg
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/electron-installer-dmg
+13 verbose request uri https://registry.npmjs.org/electron-installer-dmg
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 12:19:26 PM
+16 verbose request id 694649d2268f4bb2
+17 http request GET https://registry.npmjs.org/electron-installer-dmg
+18 http 200 https://registry.npmjs.org/electron-installer-dmg
+19 verbose headers { date: 'Mon, 08 Apr 2019 10:19:27 GMT',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'transfer-encoding': 'chunked',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'set-cookie':
+19 verbose headers    [ '__cfduid=d17b0e2414c6dc8956d96096a70a7475a1554718766; expires=Tue, 07-Apr-20 10:19:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+19 verbose headers   'cf-cache-status': 'REVALIDATED',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'cf-ray': '4c4380c30fca625a-LIS',
+19 verbose headers   etag: 'W/"3e6d8271a7b20a59ca39b5d59f7f137d"',
+19 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+19 verbose headers   'last-modified': 'Sat, 02 Mar 2019 00:15:30 GMT',
+19 verbose headers   vary: 'accept-encoding, accept',
+19 verbose headers   'x-amz-meta-rev': '87-aafc732e890f5da15262c7ad88001128',
+19 verbose headers   server: 'cloudflare',
+19 verbose headers   'content-encoding': 'gzip' }
+20 silly get cb [ 200,
+20 silly get   { date: 'Mon, 08 Apr 2019 10:19:27 GMT',
+20 silly get     'content-type': 'application/json',
+20 silly get     'transfer-encoding': 'chunked',
+20 silly get     connection: 'keep-alive',
+20 silly get     'set-cookie':
+20 silly get      [ '__cfduid=d17b0e2414c6dc8956d96096a70a7475a1554718766; expires=Tue, 07-Apr-20 10:19:26 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+20 silly get     'cf-cache-status': 'REVALIDATED',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'cf-ray': '4c4380c30fca625a-LIS',
+20 silly get     etag: 'W/"3e6d8271a7b20a59ca39b5d59f7f137d"',
+20 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 silly get     'last-modified': 'Sat, 02 Mar 2019 00:15:30 GMT',
+20 silly get     vary: 'accept-encoding, accept',
+20 silly get     'x-amz-meta-rev': '87-aafc732e890f5da15262c7ad88001128',
+20 silly get     server: 'cloudflare',
+20 silly get     'content-encoding': 'gzip' } ]
+21 verbose get saving electron-installer-dmg to /home/alumnos/sfuente/.npm/registry.npmjs.org/electron-installer-dmg/.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule electron-installer-dmg@2.0.0 checking installable status
+35 silly cache add args [ 'electron-installer-dmg', null ]
+36 verbose cache add spec electron-installer-dmg
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'electron-installer-dmg',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'electron-installer-dmg',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: 'latest',
+37 silly cache add   type: 'tag' }
+38 silly addNamed electron-installer-dmg@latest
+39 verbose addNamed "latest" is being treated as a dist-tag for electron-installer-dmg
+40 info addNameTag [ 'electron-installer-dmg', 'latest' ]
+41 silly mapToRegistry name electron-installer-dmg
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/electron-installer-dmg
+45 verbose addNameTag registry:https://registry.npmjs.org/electron-installer-dmg not in flight; fetching
+46 verbose get https://registry.npmjs.org/electron-installer-dmg not expired, no request
+47 silly addNameTag next cb for electron-installer-dmg with tag latest
+48 silly addNamed electron-installer-dmg@2.0.0
+49 verbose addNamed "2.0.0" is a plain semver version for electron-installer-dmg
+50 silly mapToRegistry name electron-installer-dmg
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/electron-installer-dmg
+54 verbose addRemoteTarball https://registry.npmjs.org/electron-installer-dmg/-/electron-installer-dmg-2.0.0.tgz not in flight; adding
+55 verbose addRemoteTarball [ 'https://registry.npmjs.org/electron-installer-dmg/-/electron-installer-dmg-2.0.0.tgz',
+55 verbose addRemoteTarball   'a38916476261e0b3a3bc318d5dcc8a80e634dedf' ]
+56 info retry fetch attempt 1 at 12:19:27 PM
+57 info attempt registry request try #1 at 12:19:27 PM
+58 http fetch GET https://registry.npmjs.org/electron-installer-dmg/-/electron-installer-dmg-2.0.0.tgz
+59 http fetch 200 https://registry.npmjs.org/electron-installer-dmg/-/electron-installer-dmg-2.0.0.tgz
+60 silly fetchAndShaCheck shasum a38916476261e0b3a3bc318d5dcc8a80e634dedf
+61 verbose addTmpTarball /tmp/npm-30753-059c8b94/registry.npmjs.org/electron-installer-dmg/-/electron-installer-dmg-2.0.0.tgz not in flight; adding
+62 verbose addTmpTarball already have metadata; skipping unpack for electron-installer-dmg@2.0.0
+63 silly cache afterAdd electron-installer-dmg@2.0.0
+64 verbose afterAdd /home/alumnos/sfuente/.npm/electron-installer-dmg/2.0.0/package/package.json not in flight; writing
+65 verbose afterAdd /home/alumnos/sfuente/.npm/electron-installer-dmg/2.0.0/package/package.json written
+66 silly fetchNamedPackageData fs-extra
+67 silly mapToRegistry name fs-extra
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+71 silly fetchNamedPackageData appdmg
+72 silly mapToRegistry name appdmg
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npmjs.org/
+75 silly mapToRegistry uri https://registry.npmjs.org/appdmg
+76 verbose request uri https://registry.npmjs.org/appdmg
+77 verbose request no auth needed
+78 info attempt registry request try #1 at 12:19:27 PM
+79 http request GET https://registry.npmjs.org/appdmg
+80 verbose request uri https://registry.npmjs.org/fs-extra
+81 verbose request no auth needed
+82 info attempt registry request try #1 at 12:19:27 PM
+83 verbose etag W/"7328fafddc25f16815414f83a423b077"
+84 verbose lastModified Thu, 03 Jan 2019 22:21:48 GMT
+85 http request GET https://registry.npmjs.org/fs-extra
+86 http 200 https://registry.npmjs.org/appdmg
+87 verbose headers { date: 'Mon, 08 Apr 2019 10:19:27 GMT',
+87 verbose headers   'content-type': 'application/json; charset=UTF-8',
+87 verbose headers   'transfer-encoding': 'chunked',
+87 verbose headers   connection: 'keep-alive',
+87 verbose headers   'set-cookie':
+87 verbose headers    [ '__cfduid=d8b7f57feedfac8e8be784a1dc700588d1554718767; expires=Tue, 07-Apr-20 10:19:27 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+87 verbose headers   'cf-cache-status': 'HIT',
+87 verbose headers   'cache-control': 'max-age=300',
+87 verbose headers   'cf-ray': '4c4380c9dd37625a-LIS',
+87 verbose headers   etag: 'W/"740a36d759d2fbfbad640425ba3dc788"',
+87 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+87 verbose headers   'last-modified': 'Sat, 26 May 2018 17:10:10 GMT',
+87 verbose headers   vary: 'accept-encoding, accept',
+87 verbose headers   server: 'cloudflare',
+87 verbose headers   'content-encoding': 'gzip' }
+88 silly get cb [ 200,
+88 silly get   { date: 'Mon, 08 Apr 2019 10:19:27 GMT',
+88 silly get     'content-type': 'application/json; charset=UTF-8',
+88 silly get     'transfer-encoding': 'chunked',
+88 silly get     connection: 'keep-alive',
+88 silly get     'set-cookie':
+88 silly get      [ '__cfduid=d8b7f57feedfac8e8be784a1dc700588d1554718767; expires=Tue, 07-Apr-20 10:19:27 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+88 silly get     'cf-cache-status': 'HIT',
+88 silly get     'cache-control': 'max-age=300',
+88 silly get     'cf-ray': '4c4380c9dd37625a-LIS',
+88 silly get     etag: 'W/"740a36d759d2fbfbad640425ba3dc788"',
+88 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+88 silly get     'last-modified': 'Sat, 26 May 2018 17:10:10 GMT',
+88 silly get     vary: 'accept-encoding, accept',
+88 silly get     server: 'cloudflare',
+88 silly get     'content-encoding': 'gzip' } ]
+89 verbose get saving appdmg to /home/alumnos/sfuente/.npm/registry.npmjs.org/appdmg/.cache.json
+90 silly resolveWithNewModule appdmg@0.5.2 checking installable status
+91 http 304 https://registry.npmjs.org/fs-extra
+92 verbose headers { date: 'Mon, 08 Apr 2019 10:19:27 GMT',
+92 verbose headers   connection: 'keep-alive',
+92 verbose headers   'set-cookie':
+92 verbose headers    [ '__cfduid=d7040b6408e2e27bc7d94d8e21556dca41554718767; expires=Tue, 07-Apr-20 10:19:27 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+92 verbose headers   'cf-cache-status': 'HIT',
+92 verbose headers   'cache-control': 'max-age=300',
+92 verbose headers   'cf-ray': '4c4380ca2bde6212-LIS',
+92 verbose headers   etag: '"7328fafddc25f16815414f83a423b077"',
+92 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+92 verbose headers   'last-modified': 'Thu, 03 Jan 2019 22:21:48 GMT',
+92 verbose headers   vary: 'accept-encoding, accept',
+92 verbose headers   'x-amz-meta-rev': '611-fe9f2679540465b80afdb04d96377b8d',
+92 verbose headers   server: 'cloudflare' }
+93 silly get cb [ 304,
+93 silly get   { date: 'Mon, 08 Apr 2019 10:19:27 GMT',
+93 silly get     connection: 'keep-alive',
+93 silly get     'set-cookie':
+93 silly get      [ '__cfduid=d7040b6408e2e27bc7d94d8e21556dca41554718767; expires=Tue, 07-Apr-20 10:19:27 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+93 silly get     'cf-cache-status': 'HIT',
+93 silly get     'cache-control': 'max-age=300',
+93 silly get     'cf-ray': '4c4380ca2bde6212-LIS',
+93 silly get     etag: '"7328fafddc25f16815414f83a423b077"',
+93 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+93 silly get     'last-modified': 'Thu, 03 Jan 2019 22:21:48 GMT',
+93 silly get     vary: 'accept-encoding, accept',
+93 silly get     'x-amz-meta-rev': '611-fe9f2679540465b80afdb04d96377b8d',
+93 silly get     server: 'cloudflare' } ]
+94 verbose etag https://registry.npmjs.org/fs-extra from cache
+95 verbose get saving fs-extra to /home/alumnos/sfuente/.npm/registry.npmjs.org/fs-extra/.cache.json
+96 silly resolveWithNewModule fs-extra@6.0.1 checking installable status
+97 silly cache add args [ 'fs-extra@^6.0.1', null ]
+98 verbose cache add spec fs-extra@^6.0.1
+99 silly cache add parsed spec Result {
+99 silly cache add   raw: 'fs-extra@^6.0.1',
+99 silly cache add   scope: null,
+99 silly cache add   name: 'fs-extra',
+99 silly cache add   rawSpec: '^6.0.1',
+99 silly cache add   spec: '>=6.0.1 <7.0.0',
+99 silly cache add   type: 'range' }
+100 silly addNamed fs-extra@>=6.0.1 <7.0.0
+101 verbose addNamed ">=6.0.1 <7.0.0" is a valid semver range for fs-extra
+102 silly addNameRange { name: 'fs-extra', range: '>=6.0.1 <7.0.0', hasData: false }
+103 silly mapToRegistry name fs-extra
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+107 verbose addNameRange registry:https://registry.npmjs.org/fs-extra not in flight; fetching
+108 verbose get https://registry.npmjs.org/fs-extra not expired, no request
+109 silly addNameRange number 2 { name: 'fs-extra', range: '>=6.0.1 <7.0.0', hasData: true }
+110 silly addNameRange versions [ 'fs-extra',
+110 silly addNameRange   [ '0.0.1',
+110 silly addNameRange     '0.0.11',
+110 silly addNameRange     '0.0.3',
+110 silly addNameRange     '0.0.4',
+110 silly addNameRange     '0.1.0',
+110 silly addNameRange     '0.1.1',
+110 silly addNameRange     '0.1.2',
+110 silly addNameRange     '0.1.3',
+110 silly addNameRange     '0.2.0',
+110 silly addNameRange     '0.2.1',
+110 silly addNameRange     '0.3.0',
+110 silly addNameRange     '0.3.1',
+110 silly addNameRange     '0.3.2',
+110 silly addNameRange     '0.4.0',
+110 silly addNameRange     '0.5.0',
+110 silly addNameRange     '0.6.0',
+110 silly addNameRange     '0.6.1',
+110 silly addNameRange     '0.6.2',
+110 silly addNameRange     '0.6.3',
+110 silly addNameRange     '0.6.4',
+110 silly addNameRange     '0.7.0',
+110 silly addNameRange     '0.7.1',
+110 silly addNameRange     '0.8.0',
+110 silly addNameRange     '0.8.1',
+110 silly addNameRange     '0.9.0',
+110 silly addNameRange     '0.9.1',
+110 silly addNameRange     '0.10.0',
+110 silly addNameRange     '0.11.0',
+110 silly addNameRange     '0.11.1',
+110 silly addNameRange     '0.12.0',
+110 silly addNameRange     '0.13.0',
+110 silly addNameRange     '0.14.0',
+110 silly addNameRange     '0.15.0',
+110 silly addNameRange     '0.16.0',
+110 silly addNameRange     '0.16.1',
+110 silly addNameRange     '0.16.2',
+110 silly addNameRange     '0.16.3',
+110 silly addNameRange     '0.16.4',
+110 silly addNameRange     '0.16.5',
+110 silly addNameRange     '0.17.0',
+110 silly addNameRange     '0.18.0',
+110 silly addNameRange     '0.18.1',
+110 silly addNameRange     '0.18.2',
+110 silly addNameRange     '0.18.3',
+110 silly addNameRange     '0.18.4',
+110 silly addNameRange     '0.19.0',
+110 silly addNameRange     '0.20.0',
+110 silly addNameRange     '0.20.1',
+110 silly addNameRange     '0.21.0',
+110 silly addNameRange     '0.22.0',
+110 silly addNameRange     '0.22.1',
+110 silly addNameRange     '0.23.0',
+110 silly addNameRange     '0.23.1',
+110 silly addNameRange     '0.24.0',
+110 silly addNameRange     '0.25.0',
+110 silly addNameRange     '0.26.0',
+110 silly addNameRange     '0.26.1',
+110 silly addNameRange     '0.26.2',
+110 silly addNameRange     '0.26.3',
+110 silly addNameRange     '0.26.4',
+110 silly addNameRange     '0.26.5',
+110 silly addNameRange     '0.26.6',
+110 silly addNameRange     '0.26.7',
+110 silly addNameRange     '0.27.0',
+110 silly addNameRange     '0.28.0',
+110 silly addNameRange     '0.29.0',
+110 silly addNameRange     '0.30.0',
+110 silly addNameRange     '1.0.0',
+110 silly addNameRange     '2.0.0',
+110 silly addNameRange     '2.1.0',
+110 silly addNameRange     '2.1.1',
+110 silly addNameRange     '2.1.2',
+110 silly addNameRange     '3.0.0',
+110 silly addNameRange     '3.0.1',
+110 silly addNameRange     '4.0.0',
+110 silly addNameRange     '4.0.1',
+110 silly addNameRange     '4.0.2',
+110 silly addNameRange     '4.0.3',
+110 silly addNameRange     '5.0.0',
+110 silly addNameRange     '6.0.0',
+110 silly addNameRange     '6.0.1',
+110 silly addNameRange     '7.0.0',
+110 silly addNameRange     '7.0.1' ] ]
+111 silly addNamed fs-extra@6.0.1
+112 verbose addNamed "6.0.1" is a plain semver version for fs-extra
+113 silly mapToRegistry name fs-extra
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+117 verbose addRemoteTarball https://registry.npmjs.org/fs-extra/-/fs-extra-6.0.1.tgz not in flight; adding
+118 verbose addRemoteTarball [ 'https://registry.npmjs.org/fs-extra/-/fs-extra-6.0.1.tgz',
+118 verbose addRemoteTarball   '8abc128f7946e310135ddc93b98bddb410e7a34b' ]
+119 info retry fetch attempt 1 at 12:19:27 PM
+120 info attempt registry request try #1 at 12:19:27 PM
+121 http fetch GET https://registry.npmjs.org/fs-extra/-/fs-extra-6.0.1.tgz
+122 http fetch 200 https://registry.npmjs.org/fs-extra/-/fs-extra-6.0.1.tgz
+123 silly fetchAndShaCheck shasum 8abc128f7946e310135ddc93b98bddb410e7a34b
+124 verbose addTmpTarball /tmp/npm-30753-059c8b94/registry.npmjs.org/fs-extra/-/fs-extra-6.0.1.tgz not in flight; adding
+125 verbose addTmpTarball already have metadata; skipping unpack for fs-extra@6.0.1
+126 silly cache afterAdd fs-extra@6.0.1
+127 verbose afterAdd /home/alumnos/sfuente/.npm/fs-extra/6.0.1/package/package.json not in flight; writing
+128 verbose afterAdd /home/alumnos/sfuente/.npm/fs-extra/6.0.1/package/package.json written
+129 silly loadAllDepsIntoIdealTree Finishing
+130 silly idealTree:prePrune electron_prueba@1.0.0
+130 silly idealTree:prePrune ├── @types/node@10.14.4
+130 silly idealTree:prePrune ├── ajv@6.10.0
+130 silly idealTree:prePrune ├── ansi-regex@2.1.1
+130 silly idealTree:prePrune ├── array-find-index@1.0.2
+130 silly idealTree:prePrune ├─┬ asar@1.0.0
+130 silly idealTree:prePrune │ └── pify@4.0.1
+130 silly idealTree:prePrune ├── asn1@0.2.4
+130 silly idealTree:prePrune ├── assert-plus@1.0.0
+130 silly idealTree:prePrune ├── asynckit@0.4.0
+130 silly idealTree:prePrune ├── author-regex@1.0.0
+130 silly idealTree:prePrune ├── aws-sign2@0.7.0
+130 silly idealTree:prePrune ├── aws4@1.8.0
+130 silly idealTree:prePrune ├── balanced-match@1.0.0
+130 silly idealTree:prePrune ├── base64-js@1.3.0
+130 silly idealTree:prePrune ├── bcrypt-pbkdf@1.0.2
+130 silly idealTree:prePrune ├── bluebird@3.5.4
+130 silly idealTree:prePrune ├── brace-expansion@1.1.11
+130 silly idealTree:prePrune ├── buffer-alloc-unsafe@1.1.0
+130 silly idealTree:prePrune ├── buffer-alloc@1.2.0
+130 silly idealTree:prePrune ├── buffer-fill@1.0.0
+130 silly idealTree:prePrune ├── buffer-from@1.1.1
+130 silly idealTree:prePrune ├── camelcase-keys@2.1.0
+130 silly idealTree:prePrune ├── camelcase@2.1.1
+130 silly idealTree:prePrune ├── caseless@0.12.0
+130 silly idealTree:prePrune ├── chromium-pickle-js@0.2.0
+130 silly idealTree:prePrune ├── code-point-at@1.1.0
+130 silly idealTree:prePrune ├── combined-stream@1.0.7
+130 silly idealTree:prePrune ├── commander@2.20.0
+130 silly idealTree:prePrune ├── compare-version@0.1.2
+130 silly idealTree:prePrune ├── concat-map@0.0.1
+130 silly idealTree:prePrune ├─┬ concat-stream@1.6.2
+130 silly idealTree:prePrune │ ├── isarray@1.0.0
+130 silly idealTree:prePrune │ ├── readable-stream@2.3.6
+130 silly idealTree:prePrune │ └── string_decoder@1.1.1
+130 silly idealTree:prePrune ├── core-util-is@1.0.2
+130 silly idealTree:prePrune ├── cuint@0.2.2
+130 silly idealTree:prePrune ├── currently-unhandled@0.4.1
+130 silly idealTree:prePrune ├── dashdash@1.14.1
+130 silly idealTree:prePrune ├── debug@3.2.6
+130 silly idealTree:prePrune ├── decamelize@1.2.0
+130 silly idealTree:prePrune ├── deep-extend@0.6.0
+130 silly idealTree:prePrune ├── delayed-stream@1.0.0
+130 silly idealTree:prePrune ├── ecc-jsbn@0.1.2
+130 silly idealTree:prePrune ├── electron-download@4.1.1
+130 silly idealTree:prePrune ├─┬ electron-installer-dmg@2.0.0
+130 silly idealTree:prePrune │ └── fs-extra@6.0.1
+130 silly idealTree:prePrune ├─┬ electron-notarize@0.0.5
+130 silly idealTree:prePrune │ ├── debug@4.1.1
+130 silly idealTree:prePrune │ └── fs-extra@7.0.1
+130 silly idealTree:prePrune ├─┬ electron-osx-sign@0.4.11
+130 silly idealTree:prePrune │ ├── debug@2.6.9
+130 silly idealTree:prePrune │ └── ms@2.0.0
+130 silly idealTree:prePrune ├─┬ electron-packager@13.1.1
+130 silly idealTree:prePrune │ ├── debug@4.1.1
+130 silly idealTree:prePrune │ ├── fs-extra@7.0.1
+130 silly idealTree:prePrune │ └── pify@4.0.1
+130 silly idealTree:prePrune ├── electron@4.1.4
+130 silly idealTree:prePrune ├── env-paths@1.0.0
+130 silly idealTree:prePrune ├── error-ex@1.3.2
+130 silly idealTree:prePrune ├── extend@3.0.2
+130 silly idealTree:prePrune ├─┬ extract-zip@1.6.7
+130 silly idealTree:prePrune │ ├── debug@2.6.9
+130 silly idealTree:prePrune │ └── ms@2.0.0
+130 silly idealTree:prePrune ├── extsprintf@1.3.0
+130 silly idealTree:prePrune ├── fast-deep-equal@2.0.1
+130 silly idealTree:prePrune ├── fast-json-stable-stringify@2.0.0
+130 silly idealTree:prePrune ├── fd-slicer@1.0.1
+130 silly idealTree:prePrune ├─┬ find-up@1.1.2
+130 silly idealTree:prePrune │ └── path-exists@2.1.0
+130 silly idealTree:prePrune ├── flora-colossus@1.0.0
+130 silly idealTree:prePrune ├── forever-agent@0.6.1
+130 silly idealTree:prePrune ├── form-data@2.3.3
+130 silly idealTree:prePrune ├── fs-extra@4.0.3
+130 silly idealTree:prePrune ├── fs.realpath@1.0.0
+130 silly idealTree:prePrune ├── galactus@0.2.1
+130 silly idealTree:prePrune ├─┬ get-package-info@1.0.0
+130 silly idealTree:prePrune │ ├── debug@2.6.9
+130 silly idealTree:prePrune │ ├── find-up@2.1.0
+130 silly idealTree:prePrune │ ├── load-json-file@2.0.0
+130 silly idealTree:prePrune │ ├── ms@2.0.0
+130 silly idealTree:prePrune │ ├── path-type@2.0.0
+130 silly idealTree:prePrune │ ├── read-pkg-up@2.0.0
+130 silly idealTree:prePrune │ ├── read-pkg@2.0.0
+130 silly idealTree:prePrune │ └── strip-bom@3.0.0
+130 silly idealTree:prePrune ├── get-stdin@4.0.1
+130 silly idealTree:prePrune ├── getpass@0.1.7
+130 silly idealTree:prePrune ├── glob@7.1.3
+130 silly idealTree:prePrune ├── graceful-fs@4.1.15
+130 silly idealTree:prePrune ├── har-schema@2.0.0
+130 silly idealTree:prePrune ├── har-validator@5.1.3
+130 silly idealTree:prePrune ├── hosted-git-info@2.7.1
+130 silly idealTree:prePrune ├── http-signature@1.2.0
+130 silly idealTree:prePrune ├── indent-string@2.1.0
+130 silly idealTree:prePrune ├── inflight@1.0.6
+130 silly idealTree:prePrune ├── inherits@2.0.3
+130 silly idealTree:prePrune ├── ini@1.3.5
+130 silly idealTree:prePrune ├── is-arrayish@0.2.1
+130 silly idealTree:prePrune ├── is-finite@1.0.2
+130 silly idealTree:prePrune ├── is-fullwidth-code-point@1.0.0
+130 silly idealTree:prePrune ├── is-typedarray@1.0.0
+130 silly idealTree:prePrune ├── is-utf8@0.2.1
+130 silly idealTree:prePrune ├── isarray@0.0.1
+130 silly idealTree:prePrune ├── isbinaryfile@3.0.3
+130 silly idealTree:prePrune ├── isstream@0.1.2
+130 silly idealTree:prePrune ├── jsbn@0.1.1
+130 silly idealTree:prePrune ├── json-schema-traverse@0.4.1
+130 silly idealTree:prePrune ├── json-schema@0.2.3
+130 silly idealTree:prePrune ├── json-stringify-safe@5.0.1
+130 silly idealTree:prePrune ├── jsonfile@4.0.0
+130 silly idealTree:prePrune ├── jsprim@1.4.1
+130 silly idealTree:prePrune ├── load-json-file@1.1.0
+130 silly idealTree:prePrune ├── locate-path@2.0.0
+130 silly idealTree:prePrune ├── lodash.get@4.4.2
+130 silly idealTree:prePrune ├── loud-rejection@1.6.0
+130 silly idealTree:prePrune ├── map-obj@1.0.1
+130 silly idealTree:prePrune ├── meow@3.7.0
+130 silly idealTree:prePrune ├── mime-db@1.38.0
+130 silly idealTree:prePrune ├── mime-types@2.1.22
+130 silly idealTree:prePrune ├── minimatch@3.0.4
+130 silly idealTree:prePrune ├── minimist@1.2.0
+130 silly idealTree:prePrune ├─┬ mkdirp@0.5.1
+130 silly idealTree:prePrune │ └── minimist@0.0.8
+130 silly idealTree:prePrune ├── ms@2.1.1
+130 silly idealTree:prePrune ├── normalize-package-data@2.5.0
+130 silly idealTree:prePrune ├─┬ nugget@2.0.1
+130 silly idealTree:prePrune │ ├── debug@2.6.9
+130 silly idealTree:prePrune │ └── ms@2.0.0
+130 silly idealTree:prePrune ├── number-is-nan@1.0.1
+130 silly idealTree:prePrune ├── oauth-sign@0.9.0
+130 silly idealTree:prePrune ├── object-assign@4.1.1
+130 silly idealTree:prePrune ├── object-keys@0.4.0
+130 silly idealTree:prePrune ├── once@1.4.0
+130 silly idealTree:prePrune ├── os-tmpdir@1.0.2
+130 silly idealTree:prePrune ├── p-limit@1.3.0
+130 silly idealTree:prePrune ├── p-locate@2.0.0
+130 silly idealTree:prePrune ├── p-try@1.0.0
+130 silly idealTree:prePrune ├── parse-author@2.0.0
+130 silly idealTree:prePrune ├── parse-json@2.2.0
+130 silly idealTree:prePrune ├── path-exists@3.0.0
+130 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+130 silly idealTree:prePrune ├── path-parse@1.0.6
+130 silly idealTree:prePrune ├── path-type@1.1.0
+130 silly idealTree:prePrune ├── pend@1.2.0
+130 silly idealTree:prePrune ├── performance-now@2.1.0
+130 silly idealTree:prePrune ├── pify@2.3.0
+130 silly idealTree:prePrune ├── pinkie-promise@2.0.1
+130 silly idealTree:prePrune ├── pinkie@2.0.4
+130 silly idealTree:prePrune ├── plist@3.0.1
+130 silly idealTree:prePrune ├── pretty-bytes@1.0.4
+130 silly idealTree:prePrune ├── process-nextick-args@2.0.0
+130 silly idealTree:prePrune ├── progress-stream@1.2.0
+130 silly idealTree:prePrune ├── psl@1.1.31
+130 silly idealTree:prePrune ├── punycode@2.1.1
+130 silly idealTree:prePrune ├── qs@6.5.2
+130 silly idealTree:prePrune ├── rc@1.2.8
+130 silly idealTree:prePrune ├── rcedit@1.1.1
+130 silly idealTree:prePrune ├── read-pkg-up@1.0.1
+130 silly idealTree:prePrune ├── read-pkg@1.1.0
+130 silly idealTree:prePrune ├── readable-stream@1.1.14
+130 silly idealTree:prePrune ├── redent@1.0.0
+130 silly idealTree:prePrune ├── repeating@2.0.1
+130 silly idealTree:prePrune ├── request@2.88.0
+130 silly idealTree:prePrune ├── resolve@1.10.0
+130 silly idealTree:prePrune ├── safe-buffer@5.1.2
+130 silly idealTree:prePrune ├── safer-buffer@2.1.2
+130 silly idealTree:prePrune ├── sanitize-filename@1.6.1
+130 silly idealTree:prePrune ├── semver@5.7.0
+130 silly idealTree:prePrune ├── signal-exit@3.0.2
+130 silly idealTree:prePrune ├── single-line-log@1.1.2
+130 silly idealTree:prePrune ├── spdx-correct@3.1.0
+130 silly idealTree:prePrune ├── spdx-exceptions@2.2.0
+130 silly idealTree:prePrune ├── spdx-expression-parse@3.0.0
+130 silly idealTree:prePrune ├── spdx-license-ids@3.0.4
+130 silly idealTree:prePrune ├── speedometer@0.1.4
+130 silly idealTree:prePrune ├── sshpk@1.16.1
+130 silly idealTree:prePrune ├── string_decoder@0.10.31
+130 silly idealTree:prePrune ├── string-width@1.0.2
+130 silly idealTree:prePrune ├── strip-ansi@3.0.1
+130 silly idealTree:prePrune ├── strip-bom@2.0.0
+130 silly idealTree:prePrune ├── strip-indent@1.0.1
+130 silly idealTree:prePrune ├── strip-json-comments@2.0.1
+130 silly idealTree:prePrune ├─┬ sumchecker@2.0.2
+130 silly idealTree:prePrune │ ├── debug@2.6.9
+130 silly idealTree:prePrune │ └── ms@2.0.0
+130 silly idealTree:prePrune ├── throttleit@0.0.2
+130 silly idealTree:prePrune ├── through2@0.2.3
+130 silly idealTree:prePrune ├── tmp-promise@1.0.5
+130 silly idealTree:prePrune ├── tmp@0.0.33
+130 silly idealTree:prePrune ├─┬ tough-cookie@2.4.3
+130 silly idealTree:prePrune │ └── punycode@1.4.1
+130 silly idealTree:prePrune ├── trim-newlines@1.0.0
+130 silly idealTree:prePrune ├── truncate-utf8-bytes@1.0.2
+130 silly idealTree:prePrune ├── tunnel-agent@0.6.0
+130 silly idealTree:prePrune ├── tweetnacl@0.14.5
+130 silly idealTree:prePrune ├── typedarray@0.0.6
+130 silly idealTree:prePrune ├── universalify@0.1.2
+130 silly idealTree:prePrune ├── uri-js@4.2.2
+130 silly idealTree:prePrune ├── utf8-byte-length@1.0.4
+130 silly idealTree:prePrune ├── util-deprecate@1.0.2
+130 silly idealTree:prePrune ├── uuid@3.3.2
+130 silly idealTree:prePrune ├── validate-npm-package-license@3.0.4
+130 silly idealTree:prePrune ├── verror@1.10.0
+130 silly idealTree:prePrune ├── wrappy@1.0.2
+130 silly idealTree:prePrune ├── xmlbuilder@9.0.7
+130 silly idealTree:prePrune ├── xmldom@0.1.27
+130 silly idealTree:prePrune ├── xtend@2.1.2
+130 silly idealTree:prePrune ├─┬ yargs-parser@13.0.0
+130 silly idealTree:prePrune │ └── camelcase@5.3.1
+130 silly idealTree:prePrune └── yauzl@2.4.1
+131 silly loadIdealTree Finishing
+132 silly currentTree electron_prueba@1.0.0
+132 silly currentTree ├── @types/node@10.14.4
+132 silly currentTree ├── ajv@6.10.0
+132 silly currentTree ├── ansi-regex@2.1.1
+132 silly currentTree ├── array-find-index@1.0.2
+132 silly currentTree ├─┬ asar@1.0.0
+132 silly currentTree │ └── pify@4.0.1
+132 silly currentTree ├── asn1@0.2.4
+132 silly currentTree ├── assert-plus@1.0.0
+132 silly currentTree ├── asynckit@0.4.0
+132 silly currentTree ├── author-regex@1.0.0
+132 silly currentTree ├── aws-sign2@0.7.0
+132 silly currentTree ├── aws4@1.8.0
+132 silly currentTree ├── balanced-match@1.0.0
+132 silly currentTree ├── base64-js@1.3.0
+132 silly currentTree ├── bcrypt-pbkdf@1.0.2
+132 silly currentTree ├── bluebird@3.5.4
+132 silly currentTree ├── brace-expansion@1.1.11
+132 silly currentTree ├── buffer-alloc-unsafe@1.1.0
+132 silly currentTree ├── buffer-alloc@1.2.0
+132 silly currentTree ├── buffer-fill@1.0.0
+132 silly currentTree ├── buffer-from@1.1.1
+132 silly currentTree ├── camelcase-keys@2.1.0
+132 silly currentTree ├── camelcase@2.1.1
+132 silly currentTree ├── caseless@0.12.0
+132 silly currentTree ├── chromium-pickle-js@0.2.0
+132 silly currentTree ├── code-point-at@1.1.0
+132 silly currentTree ├── combined-stream@1.0.7
+132 silly currentTree ├── commander@2.20.0
+132 silly currentTree ├── compare-version@0.1.2
+132 silly currentTree ├── concat-map@0.0.1
+132 silly currentTree ├─┬ concat-stream@1.6.2
+132 silly currentTree │ ├── isarray@1.0.0
+132 silly currentTree │ ├── readable-stream@2.3.6
+132 silly currentTree │ └── string_decoder@1.1.1
+132 silly currentTree ├── core-util-is@1.0.2
+132 silly currentTree ├── cuint@0.2.2
+132 silly currentTree ├── currently-unhandled@0.4.1
+132 silly currentTree ├── dashdash@1.14.1
+132 silly currentTree ├── debug@3.2.6
+132 silly currentTree ├── decamelize@1.2.0
+132 silly currentTree ├── deep-extend@0.6.0
+132 silly currentTree ├── delayed-stream@1.0.0
+132 silly currentTree ├── ecc-jsbn@0.1.2
+132 silly currentTree ├── electron-download@4.1.1
+132 silly currentTree ├─┬ electron-notarize@0.0.5
+132 silly currentTree │ ├── debug@4.1.1
+132 silly currentTree │ └── fs-extra@7.0.1
+132 silly currentTree ├─┬ electron-osx-sign@0.4.11
+132 silly currentTree │ ├── debug@2.6.9
+132 silly currentTree │ └── ms@2.0.0
+132 silly currentTree ├─┬ electron-packager@13.1.1
+132 silly currentTree │ ├── debug@4.1.1
+132 silly currentTree │ ├── fs-extra@7.0.1
+132 silly currentTree │ └── pify@4.0.1
+132 silly currentTree ├── electron@4.1.4
+132 silly currentTree ├── env-paths@1.0.0
+132 silly currentTree ├── error-ex@1.3.2
+132 silly currentTree ├── extend@3.0.2
+132 silly currentTree ├─┬ extract-zip@1.6.7
+132 silly currentTree │ ├── debug@2.6.9
+132 silly currentTree │ └── ms@2.0.0
+132 silly currentTree ├── extsprintf@1.3.0
+132 silly currentTree ├── fast-deep-equal@2.0.1
+132 silly currentTree ├── fast-json-stable-stringify@2.0.0
+132 silly currentTree ├── fd-slicer@1.0.1
+132 silly currentTree ├─┬ find-up@1.1.2
+132 silly currentTree │ └── path-exists@2.1.0
+132 silly currentTree ├── flora-colossus@1.0.0
+132 silly currentTree ├── forever-agent@0.6.1
+132 silly currentTree ├── form-data@2.3.3
+132 silly currentTree ├── fs-extra@4.0.3
+132 silly currentTree ├── fs.realpath@1.0.0
+132 silly currentTree ├── galactus@0.2.1
+132 silly currentTree ├─┬ get-package-info@1.0.0
+132 silly currentTree │ ├── debug@2.6.9
+132 silly currentTree │ ├── find-up@2.1.0
+132 silly currentTree │ ├── load-json-file@2.0.0
+132 silly currentTree │ ├── ms@2.0.0
+132 silly currentTree │ ├── path-type@2.0.0
+132 silly currentTree │ ├── read-pkg-up@2.0.0
+132 silly currentTree │ ├── read-pkg@2.0.0
+132 silly currentTree │ └── strip-bom@3.0.0
+132 silly currentTree ├── get-stdin@4.0.1
+132 silly currentTree ├── getpass@0.1.7
+132 silly currentTree ├── glob@7.1.3
+132 silly currentTree ├── graceful-fs@4.1.15
+132 silly currentTree ├── har-schema@2.0.0
+132 silly currentTree ├── har-validator@5.1.3
+132 silly currentTree ├── hosted-git-info@2.7.1
+132 silly currentTree ├── http-signature@1.2.0
+132 silly currentTree ├── indent-string@2.1.0
+132 silly currentTree ├── inflight@1.0.6
+132 silly currentTree ├── inherits@2.0.3
+132 silly currentTree ├── ini@1.3.5
+132 silly currentTree ├── is-arrayish@0.2.1
+132 silly currentTree ├── is-finite@1.0.2
+132 silly currentTree ├── is-fullwidth-code-point@1.0.0
+132 silly currentTree ├── is-typedarray@1.0.0
+132 silly currentTree ├── is-utf8@0.2.1
+132 silly currentTree ├── isarray@0.0.1
+132 silly currentTree ├── isbinaryfile@3.0.3
+132 silly currentTree ├── isstream@0.1.2
+132 silly currentTree ├── jsbn@0.1.1
+132 silly currentTree ├── json-schema-traverse@0.4.1
+132 silly currentTree ├── json-schema@0.2.3
+132 silly currentTree ├── json-stringify-safe@5.0.1
+132 silly currentTree ├── jsonfile@4.0.0
+132 silly currentTree ├── jsprim@1.4.1
+132 silly currentTree ├── load-json-file@1.1.0
+132 silly currentTree ├── locate-path@2.0.0
+132 silly currentTree ├── lodash.get@4.4.2
+132 silly currentTree ├── loud-rejection@1.6.0
+132 silly currentTree ├── map-obj@1.0.1
+132 silly currentTree ├── meow@3.7.0
+132 silly currentTree ├── mime-db@1.38.0
+132 silly currentTree ├── mime-types@2.1.22
+132 silly currentTree ├── minimatch@3.0.4
+132 silly currentTree ├── minimist@1.2.0
+132 silly currentTree ├─┬ mkdirp@0.5.1
+132 silly currentTree │ └── minimist@0.0.8
+132 silly currentTree ├── ms@2.1.1
+132 silly currentTree ├── normalize-package-data@2.5.0
+132 silly currentTree ├─┬ nugget@2.0.1
+132 silly currentTree │ ├── debug@2.6.9
+132 silly currentTree │ └── ms@2.0.0
+132 silly currentTree ├── number-is-nan@1.0.1
+132 silly currentTree ├── oauth-sign@0.9.0
+132 silly currentTree ├── object-assign@4.1.1
+132 silly currentTree ├── object-keys@0.4.0
+132 silly currentTree ├── once@1.4.0
+132 silly currentTree ├── os-tmpdir@1.0.2
+132 silly currentTree ├── p-limit@1.3.0
+132 silly currentTree ├── p-locate@2.0.0
+132 silly currentTree ├── p-try@1.0.0
+132 silly currentTree ├── parse-author@2.0.0
+132 silly currentTree ├── parse-json@2.2.0
+132 silly currentTree ├── path-exists@3.0.0
+132 silly currentTree ├── path-is-absolute@1.0.1
+132 silly currentTree ├── path-parse@1.0.6
+132 silly currentTree ├── path-type@1.1.0
+132 silly currentTree ├── pend@1.2.0
+132 silly currentTree ├── performance-now@2.1.0
+132 silly currentTree ├── pify@2.3.0
+132 silly currentTree ├── pinkie-promise@2.0.1
+132 silly currentTree ├── pinkie@2.0.4
+132 silly currentTree ├── plist@3.0.1
+132 silly currentTree ├── pretty-bytes@1.0.4
+132 silly currentTree ├── process-nextick-args@2.0.0
+132 silly currentTree ├── progress-stream@1.2.0
+132 silly currentTree ├── psl@1.1.31
+132 silly currentTree ├── punycode@2.1.1
+132 silly currentTree ├── qs@6.5.2
+132 silly currentTree ├── rc@1.2.8
+132 silly currentTree ├── rcedit@1.1.1
+132 silly currentTree ├── read-pkg-up@1.0.1
+132 silly currentTree ├── read-pkg@1.1.0
+132 silly currentTree ├── readable-stream@1.1.14
+132 silly currentTree ├── redent@1.0.0
+132 silly currentTree ├── repeating@2.0.1
+132 silly currentTree ├── request@2.88.0
+132 silly currentTree ├── resolve@1.10.0
+132 silly currentTree ├── safe-buffer@5.1.2
+132 silly currentTree ├── safer-buffer@2.1.2
+132 silly currentTree ├── sanitize-filename@1.6.1
+132 silly currentTree ├── semver@5.7.0
+132 silly currentTree ├── signal-exit@3.0.2
+132 silly currentTree ├── single-line-log@1.1.2
+132 silly currentTree ├── spdx-correct@3.1.0
+132 silly currentTree ├── spdx-exceptions@2.2.0
+132 silly currentTree ├── spdx-expression-parse@3.0.0
+132 silly currentTree ├── spdx-license-ids@3.0.4
+132 silly currentTree ├── speedometer@0.1.4
+132 silly currentTree ├── sshpk@1.16.1
+132 silly currentTree ├── string_decoder@0.10.31
+132 silly currentTree ├── string-width@1.0.2
+132 silly currentTree ├── strip-ansi@3.0.1
+132 silly currentTree ├── strip-bom@2.0.0
+132 silly currentTree ├── strip-indent@1.0.1
+132 silly currentTree ├── strip-json-comments@2.0.1
+132 silly currentTree ├─┬ sumchecker@2.0.2
+132 silly currentTree │ ├── debug@2.6.9
+132 silly currentTree │ └── ms@2.0.0
+132 silly currentTree ├── throttleit@0.0.2
+132 silly currentTree ├── through2@0.2.3
+132 silly currentTree ├── tmp-promise@1.0.5
+132 silly currentTree ├── tmp@0.0.33
+132 silly currentTree ├─┬ tough-cookie@2.4.3
+132 silly currentTree │ └── punycode@1.4.1
+132 silly currentTree ├── trim-newlines@1.0.0
+132 silly currentTree ├── truncate-utf8-bytes@1.0.2
+132 silly currentTree ├── tunnel-agent@0.6.0
+132 silly currentTree ├── tweetnacl@0.14.5
+132 silly currentTree ├── typedarray@0.0.6
+132 silly currentTree ├── universalify@0.1.2
+132 silly currentTree ├── uri-js@4.2.2
+132 silly currentTree ├── utf8-byte-length@1.0.4
+132 silly currentTree ├── util-deprecate@1.0.2
+132 silly currentTree ├── uuid@3.3.2
+132 silly currentTree ├── validate-npm-package-license@3.0.4
+132 silly currentTree ├── verror@1.10.0
+132 silly currentTree ├── wrappy@1.0.2
+132 silly currentTree ├── xmlbuilder@9.0.7
+132 silly currentTree ├── xmldom@0.1.27
+132 silly currentTree ├── xtend@2.1.2
+132 silly currentTree ├─┬ yargs-parser@13.0.0
+132 silly currentTree │ └── camelcase@5.3.1
+132 silly currentTree └── yauzl@2.4.1
+133 silly idealTree electron_prueba@1.0.0
+133 silly idealTree ├── @types/node@10.14.4
+133 silly idealTree ├── ajv@6.10.0
+133 silly idealTree ├── ansi-regex@2.1.1
+133 silly idealTree ├── array-find-index@1.0.2
+133 silly idealTree ├─┬ asar@1.0.0
+133 silly idealTree │ └── pify@4.0.1
+133 silly idealTree ├── asn1@0.2.4
+133 silly idealTree ├── assert-plus@1.0.0
+133 silly idealTree ├── asynckit@0.4.0
+133 silly idealTree ├── author-regex@1.0.0
+133 silly idealTree ├── aws-sign2@0.7.0
+133 silly idealTree ├── aws4@1.8.0
+133 silly idealTree ├── balanced-match@1.0.0
+133 silly idealTree ├── base64-js@1.3.0
+133 silly idealTree ├── bcrypt-pbkdf@1.0.2
+133 silly idealTree ├── bluebird@3.5.4
+133 silly idealTree ├── brace-expansion@1.1.11
+133 silly idealTree ├── buffer-alloc-unsafe@1.1.0
+133 silly idealTree ├── buffer-alloc@1.2.0
+133 silly idealTree ├── buffer-fill@1.0.0
+133 silly idealTree ├── buffer-from@1.1.1
+133 silly idealTree ├── camelcase-keys@2.1.0
+133 silly idealTree ├── camelcase@2.1.1
+133 silly idealTree ├── caseless@0.12.0
+133 silly idealTree ├── chromium-pickle-js@0.2.0
+133 silly idealTree ├── code-point-at@1.1.0
+133 silly idealTree ├── combined-stream@1.0.7
+133 silly idealTree ├── commander@2.20.0
+133 silly idealTree ├── compare-version@0.1.2
+133 silly idealTree ├── concat-map@0.0.1
+133 silly idealTree ├─┬ concat-stream@1.6.2
+133 silly idealTree │ ├── isarray@1.0.0
+133 silly idealTree │ ├── readable-stream@2.3.6
+133 silly idealTree │ └── string_decoder@1.1.1
+133 silly idealTree ├── core-util-is@1.0.2
+133 silly idealTree ├── cuint@0.2.2
+133 silly idealTree ├── currently-unhandled@0.4.1
+133 silly idealTree ├── dashdash@1.14.1
+133 silly idealTree ├── debug@3.2.6
+133 silly idealTree ├── decamelize@1.2.0
+133 silly idealTree ├── deep-extend@0.6.0
+133 silly idealTree ├── delayed-stream@1.0.0
+133 silly idealTree ├── ecc-jsbn@0.1.2
+133 silly idealTree ├── electron-download@4.1.1
+133 silly idealTree ├─┬ electron-installer-dmg@2.0.0
+133 silly idealTree │ └── fs-extra@6.0.1
+133 silly idealTree ├─┬ electron-notarize@0.0.5
+133 silly idealTree │ ├── debug@4.1.1
+133 silly idealTree │ └── fs-extra@7.0.1
+133 silly idealTree ├─┬ electron-osx-sign@0.4.11
+133 silly idealTree │ ├── debug@2.6.9
+133 silly idealTree │ └── ms@2.0.0
+133 silly idealTree ├─┬ electron-packager@13.1.1
+133 silly idealTree │ ├── debug@4.1.1
+133 silly idealTree │ ├── fs-extra@7.0.1
+133 silly idealTree │ └── pify@4.0.1
+133 silly idealTree ├── electron@4.1.4
+133 silly idealTree ├── env-paths@1.0.0
+133 silly idealTree ├── error-ex@1.3.2
+133 silly idealTree ├── extend@3.0.2
+133 silly idealTree ├─┬ extract-zip@1.6.7
+133 silly idealTree │ ├── debug@2.6.9
+133 silly idealTree │ └── ms@2.0.0
+133 silly idealTree ├── extsprintf@1.3.0
+133 silly idealTree ├── fast-deep-equal@2.0.1
+133 silly idealTree ├── fast-json-stable-stringify@2.0.0
+133 silly idealTree ├── fd-slicer@1.0.1
+133 silly idealTree ├─┬ find-up@1.1.2
+133 silly idealTree │ └── path-exists@2.1.0
+133 silly idealTree ├── flora-colossus@1.0.0
+133 silly idealTree ├── forever-agent@0.6.1
+133 silly idealTree ├── form-data@2.3.3
+133 silly idealTree ├── fs-extra@4.0.3
+133 silly idealTree ├── fs.realpath@1.0.0
+133 silly idealTree ├── galactus@0.2.1
+133 silly idealTree ├─┬ get-package-info@1.0.0
+133 silly idealTree │ ├── debug@2.6.9
+133 silly idealTree │ ├── find-up@2.1.0
+133 silly idealTree │ ├── load-json-file@2.0.0
+133 silly idealTree │ ├── ms@2.0.0
+133 silly idealTree │ ├── path-type@2.0.0
+133 silly idealTree │ ├── read-pkg-up@2.0.0
+133 silly idealTree │ ├── read-pkg@2.0.0
+133 silly idealTree │ └── strip-bom@3.0.0
+133 silly idealTree ├── get-stdin@4.0.1
+133 silly idealTree ├── getpass@0.1.7
+133 silly idealTree ├── glob@7.1.3
+133 silly idealTree ├── graceful-fs@4.1.15
+133 silly idealTree ├── har-schema@2.0.0
+133 silly idealTree ├── har-validator@5.1.3
+133 silly idealTree ├── hosted-git-info@2.7.1
+133 silly idealTree ├── http-signature@1.2.0
+133 silly idealTree ├── indent-string@2.1.0
+133 silly idealTree ├── inflight@1.0.6
+133 silly idealTree ├── inherits@2.0.3
+133 silly idealTree ├── ini@1.3.5
+133 silly idealTree ├── is-arrayish@0.2.1
+133 silly idealTree ├── is-finite@1.0.2
+133 silly idealTree ├── is-fullwidth-code-point@1.0.0
+133 silly idealTree ├── is-typedarray@1.0.0
+133 silly idealTree ├── is-utf8@0.2.1
+133 silly idealTree ├── isarray@0.0.1
+133 silly idealTree ├── isbinaryfile@3.0.3
+133 silly idealTree ├── isstream@0.1.2
+133 silly idealTree ├── jsbn@0.1.1
+133 silly idealTree ├── json-schema-traverse@0.4.1
+133 silly idealTree ├── json-schema@0.2.3
+133 silly idealTree ├── json-stringify-safe@5.0.1
+133 silly idealTree ├── jsonfile@4.0.0
+133 silly idealTree ├── jsprim@1.4.1
+133 silly idealTree ├── load-json-file@1.1.0
+133 silly idealTree ├── locate-path@2.0.0
+133 silly idealTree ├── lodash.get@4.4.2
+133 silly idealTree ├── loud-rejection@1.6.0
+133 silly idealTree ├── map-obj@1.0.1
+133 silly idealTree ├── meow@3.7.0
+133 silly idealTree ├── mime-db@1.38.0
+133 silly idealTree ├── mime-types@2.1.22
+133 silly idealTree ├── minimatch@3.0.4
+133 silly idealTree ├── minimist@1.2.0
+133 silly idealTree ├─┬ mkdirp@0.5.1
+133 silly idealTree │ └── minimist@0.0.8
+133 silly idealTree ├── ms@2.1.1
+133 silly idealTree ├── normalize-package-data@2.5.0
+133 silly idealTree ├─┬ nugget@2.0.1
+133 silly idealTree │ ├── debug@2.6.9
+133 silly idealTree │ └── ms@2.0.0
+133 silly idealTree ├── number-is-nan@1.0.1
+133 silly idealTree ├── oauth-sign@0.9.0
+133 silly idealTree ├── object-assign@4.1.1
+133 silly idealTree ├── object-keys@0.4.0
+133 silly idealTree ├── once@1.4.0
+133 silly idealTree ├── os-tmpdir@1.0.2
+133 silly idealTree ├── p-limit@1.3.0
+133 silly idealTree ├── p-locate@2.0.0
+133 silly idealTree ├── p-try@1.0.0
+133 silly idealTree ├── parse-author@2.0.0
+133 silly idealTree ├── parse-json@2.2.0
+133 silly idealTree ├── path-exists@3.0.0
+133 silly idealTree ├── path-is-absolute@1.0.1
+133 silly idealTree ├── path-parse@1.0.6
+133 silly idealTree ├── path-type@1.1.0
+133 silly idealTree ├── pend@1.2.0
+133 silly idealTree ├── performance-now@2.1.0
+133 silly idealTree ├── pify@2.3.0
+133 silly idealTree ├── pinkie-promise@2.0.1
+133 silly idealTree ├── pinkie@2.0.4
+133 silly idealTree ├── plist@3.0.1
+133 silly idealTree ├── pretty-bytes@1.0.4
+133 silly idealTree ├── process-nextick-args@2.0.0
+133 silly idealTree ├── progress-stream@1.2.0
+133 silly idealTree ├── psl@1.1.31
+133 silly idealTree ├── punycode@2.1.1
+133 silly idealTree ├── qs@6.5.2
+133 silly idealTree ├── rc@1.2.8
+133 silly idealTree ├── rcedit@1.1.1
+133 silly idealTree ├── read-pkg-up@1.0.1
+133 silly idealTree ├── read-pkg@1.1.0
+133 silly idealTree ├── readable-stream@1.1.14
+133 silly idealTree ├── redent@1.0.0
+133 silly idealTree ├── repeating@2.0.1
+133 silly idealTree ├── request@2.88.0
+133 silly idealTree ├── resolve@1.10.0
+133 silly idealTree ├── safe-buffer@5.1.2
+133 silly idealTree ├── safer-buffer@2.1.2
+133 silly idealTree ├── sanitize-filename@1.6.1
+133 silly idealTree ├── semver@5.7.0
+133 silly idealTree ├── signal-exit@3.0.2
+133 silly idealTree ├── single-line-log@1.1.2
+133 silly idealTree ├── spdx-correct@3.1.0
+133 silly idealTree ├── spdx-exceptions@2.2.0
+133 silly idealTree ├── spdx-expression-parse@3.0.0
+133 silly idealTree ├── spdx-license-ids@3.0.4
+133 silly idealTree ├── speedometer@0.1.4
+133 silly idealTree ├── sshpk@1.16.1
+133 silly idealTree ├── string_decoder@0.10.31
+133 silly idealTree ├── string-width@1.0.2
+133 silly idealTree ├── strip-ansi@3.0.1
+133 silly idealTree ├── strip-bom@2.0.0
+133 silly idealTree ├── strip-indent@1.0.1
+133 silly idealTree ├── strip-json-comments@2.0.1
+133 silly idealTree ├─┬ sumchecker@2.0.2
+133 silly idealTree │ ├── debug@2.6.9
+133 silly idealTree │ └── ms@2.0.0
+133 silly idealTree ├── throttleit@0.0.2
+133 silly idealTree ├── through2@0.2.3
+133 silly idealTree ├── tmp-promise@1.0.5
+133 silly idealTree ├── tmp@0.0.33
+133 silly idealTree ├─┬ tough-cookie@2.4.3
+133 silly idealTree │ └── punycode@1.4.1
+133 silly idealTree ├── trim-newlines@1.0.0
+133 silly idealTree ├── truncate-utf8-bytes@1.0.2
+133 silly idealTree ├── tunnel-agent@0.6.0
+133 silly idealTree ├── tweetnacl@0.14.5
+133 silly idealTree ├── typedarray@0.0.6
+133 silly idealTree ├── universalify@0.1.2
+133 silly idealTree ├── uri-js@4.2.2
+133 silly idealTree ├── utf8-byte-length@1.0.4
+133 silly idealTree ├── util-deprecate@1.0.2
+133 silly idealTree ├── uuid@3.3.2
+133 silly idealTree ├── validate-npm-package-license@3.0.4
+133 silly idealTree ├── verror@1.10.0
+133 silly idealTree ├── wrappy@1.0.2
+133 silly idealTree ├── xmlbuilder@9.0.7
+133 silly idealTree ├── xmldom@0.1.27
+133 silly idealTree ├── xtend@2.1.2
+133 silly idealTree ├─┬ yargs-parser@13.0.0
+133 silly idealTree │ └── camelcase@5.3.1
+133 silly idealTree └── yauzl@2.4.1
+134 silly generateActionsToTake Starting
+135 silly install generateActionsToTake
+136 silly generateActionsToTake Finishing
+137 silly diffTrees action count 3
+138 silly diffTrees update electron@4.1.4
+139 silly diffTrees add fs-extra@6.0.1
+140 silly diffTrees add electron-installer-dmg@2.0.0
+141 silly decomposeActions action count 24
+142 silly decomposeActions fetch electron@4.1.4
+143 silly decomposeActions extract electron@4.1.4
+144 silly decomposeActions test electron@4.1.4
+145 silly decomposeActions preinstall electron@4.1.4
+146 silly decomposeActions build electron@4.1.4
+147 silly decomposeActions install electron@4.1.4
+148 silly decomposeActions postinstall electron@4.1.4
+149 silly decomposeActions finalize electron@4.1.4
+150 silly decomposeActions fetch fs-extra@6.0.1
+151 silly decomposeActions extract fs-extra@6.0.1
+152 silly decomposeActions test fs-extra@6.0.1
+153 silly decomposeActions preinstall fs-extra@6.0.1
+154 silly decomposeActions build fs-extra@6.0.1
+155 silly decomposeActions install fs-extra@6.0.1
+156 silly decomposeActions postinstall fs-extra@6.0.1
+157 silly decomposeActions finalize fs-extra@6.0.1
+158 silly decomposeActions fetch electron-installer-dmg@2.0.0
+159 silly decomposeActions extract electron-installer-dmg@2.0.0
+160 silly decomposeActions test electron-installer-dmg@2.0.0
+161 silly decomposeActions preinstall electron-installer-dmg@2.0.0
+162 silly decomposeActions build electron-installer-dmg@2.0.0
+163 silly decomposeActions install electron-installer-dmg@2.0.0
+164 silly decomposeActions postinstall electron-installer-dmg@2.0.0
+165 silly decomposeActions finalize electron-installer-dmg@2.0.0
+166 silly executeActions Starting
+167 silly install executeActions
+168 silly doSerial global-install 0
+169 silly doParallel fetch 3
+170 verbose lock using /home/alumnos/sfuente/.npm/_locks/staging-e81e659e1e18cf75.lock for /home/alumnos/sfuente/electron_prueba/node_modules/.staging
+171 silly doParallel extract 3
+172 silly extract electron@4.1.4
+173 silly extract fs-extra@6.0.1
+174 silly extract electron-installer-dmg@2.0.0
+175 verbose unbuild node_modules/.staging/fs-extra-65abadb9
+176 verbose unbuild node_modules/.staging/electron-installer-dmg-8af8d95e
+177 silly gentlyRm /home/alumnos/sfuente/electron_prueba/node_modules/.staging/fs-extra-65abadb9 is being purged from base /home/alumnos/sfuente/electron_prueba
+178 verbose gentlyRm don't care about contents; nuking /home/alumnos/sfuente/electron_prueba/node_modules/.staging/fs-extra-65abadb9
+179 silly gentlyRm /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-installer-dmg-8af8d95e is being purged from base /home/alumnos/sfuente/electron_prueba
+180 verbose gentlyRm don't care about contents; nuking /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-installer-dmg-8af8d95e
+181 verbose tar unpack /home/alumnos/sfuente/.npm/fs-extra/6.0.1/package.tgz
+182 verbose tar unpacking to /home/alumnos/sfuente/electron_prueba/node_modules/.staging/fs-extra-65abadb9
+183 silly gentlyRm /home/alumnos/sfuente/electron_prueba/node_modules/.staging/fs-extra-65abadb9 is being purged
+184 verbose gentlyRm don't care about contents; nuking /home/alumnos/sfuente/electron_prueba/node_modules/.staging/fs-extra-65abadb9
+185 verbose tar unpack /home/alumnos/sfuente/.npm/electron-installer-dmg/2.0.0/package.tgz
+186 verbose tar unpacking to /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-installer-dmg-8af8d95e
+187 silly gentlyRm /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-installer-dmg-8af8d95e is being purged
+188 verbose gentlyRm don't care about contents; nuking /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-installer-dmg-8af8d95e
+189 silly gunzTarPerm modes [ '755', '644' ]
+190 silly gunzTarPerm modes [ '755', '644' ]
+191 verbose unbuild node_modules/.staging/electron-497f609c
+192 silly gunzTarPerm extractEntry package.json
+193 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+194 silly gunzTarPerm extractEntry package.json
+195 silly gentlyRm /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-497f609c is being purged from base /home/alumnos/sfuente/electron_prueba
+196 verbose gentlyRm don't care about contents; nuking /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-497f609c
+197 verbose tar unpack /home/alumnos/sfuente/.npm/electron/4.1.4/package.tgz
+198 verbose tar unpacking to /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-497f609c
+199 silly gentlyRm /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-497f609c is being purged
+200 verbose gentlyRm don't care about contents; nuking /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-497f609c
+201 silly gunzTarPerm modes [ '755', '644' ]
+202 silly gunzTarPerm extractEntry CHANGELOG.md
+203 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+204 silly gunzTarPerm extractEntry LICENSE
+205 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+206 silly gunzTarPerm extractEntry README.md
+207 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+208 silly gunzTarPerm extractEntry docs/copy-sync.md
+209 silly gunzTarPerm modified mode [ 'docs/copy-sync.md', 436, 420 ]
+210 silly gunzTarPerm extractEntry docs/copy.md
+211 silly gunzTarPerm modified mode [ 'docs/copy.md', 436, 420 ]
+212 silly gunzTarPerm extractEntry docs/emptyDir-sync.md
+213 silly gunzTarPerm modified mode [ 'docs/emptyDir-sync.md', 436, 420 ]
+214 silly gunzTarPerm extractEntry docs/emptyDir.md
+215 silly gunzTarPerm modified mode [ 'docs/emptyDir.md', 436, 420 ]
+216 silly gunzTarPerm extractEntry docs/ensureDir-sync.md
+217 silly gunzTarPerm modified mode [ 'docs/ensureDir-sync.md', 436, 420 ]
+218 silly gunzTarPerm extractEntry docs/ensureDir.md
+219 silly gunzTarPerm modified mode [ 'docs/ensureDir.md', 436, 420 ]
+220 silly gunzTarPerm extractEntry docs/ensureFile-sync.md
+221 silly gunzTarPerm modified mode [ 'docs/ensureFile-sync.md', 436, 420 ]
+222 silly gunzTarPerm extractEntry docs/ensureFile.md
+223 silly gunzTarPerm modified mode [ 'docs/ensureFile.md', 436, 420 ]
+224 silly gunzTarPerm extractEntry docs/ensureLink-sync.md
+225 silly gunzTarPerm modified mode [ 'docs/ensureLink-sync.md', 436, 420 ]
+226 silly gunzTarPerm extractEntry docs/ensureLink.md
+227 silly gunzTarPerm modified mode [ 'docs/ensureLink.md', 436, 420 ]
+228 silly gunzTarPerm extractEntry docs/ensureSymlink-sync.md
+229 silly gunzTarPerm modified mode [ 'docs/ensureSymlink-sync.md', 436, 420 ]
+230 silly gunzTarPerm extractEntry docs/ensureSymlink.md
+231 silly gunzTarPerm modified mode [ 'docs/ensureSymlink.md', 436, 420 ]
+232 silly gunzTarPerm extractEntry docs/fs-read-write.md
+233 silly gunzTarPerm modified mode [ 'docs/fs-read-write.md', 436, 420 ]
+234 silly gunzTarPerm extractEntry docs/move-sync.md
+235 silly gunzTarPerm modified mode [ 'docs/move-sync.md', 436, 420 ]
+236 silly gunzTarPerm extractEntry docs/move.md
+237 silly gunzTarPerm modified mode [ 'docs/move.md', 436, 420 ]
+238 silly gunzTarPerm extractEntry docs/outputFile-sync.md
+239 silly gunzTarPerm modified mode [ 'docs/outputFile-sync.md', 436, 420 ]
+240 silly gunzTarPerm extractEntry docs/outputFile.md
+241 silly gunzTarPerm modified mode [ 'docs/outputFile.md', 436, 420 ]
+242 silly gunzTarPerm extractEntry docs/outputJson-sync.md
+243 silly gunzTarPerm modified mode [ 'docs/outputJson-sync.md', 436, 420 ]
+244 silly gunzTarPerm extractEntry docs/outputJson.md
+245 silly gunzTarPerm modified mode [ 'docs/outputJson.md', 436, 420 ]
+246 silly gunzTarPerm extractEntry docs/pathExists-sync.md
+247 silly gunzTarPerm modified mode [ 'docs/pathExists-sync.md', 436, 420 ]
+248 silly gunzTarPerm extractEntry docs/pathExists.md
+249 silly gunzTarPerm modified mode [ 'docs/pathExists.md', 436, 420 ]
+250 silly gunzTarPerm extractEntry docs/readJson-sync.md
+251 silly gunzTarPerm modified mode [ 'docs/readJson-sync.md', 436, 420 ]
+252 silly gunzTarPerm extractEntry docs/readJson.md
+253 silly gunzTarPerm modified mode [ 'docs/readJson.md', 436, 420 ]
+254 silly gunzTarPerm extractEntry docs/remove-sync.md
+255 silly gunzTarPerm modified mode [ 'docs/remove-sync.md', 436, 420 ]
+256 silly gunzTarPerm extractEntry docs/remove.md
+257 silly gunzTarPerm modified mode [ 'docs/remove.md', 436, 420 ]
+258 silly gunzTarPerm extractEntry docs/writeJson-sync.md
+259 silly gunzTarPerm modified mode [ 'docs/writeJson-sync.md', 436, 420 ]
+260 silly gunzTarPerm extractEntry docs/writeJson.md
+261 silly gunzTarPerm modified mode [ 'docs/writeJson.md', 436, 420 ]
+262 silly gunzTarPerm extractEntry lib/copy-sync/copy-sync.js
+263 silly gunzTarPerm modified mode [ 'lib/copy-sync/copy-sync.js', 436, 420 ]
+264 silly gunzTarPerm extractEntry lib/copy-sync/index.js
+265 silly gunzTarPerm modified mode [ 'lib/copy-sync/index.js', 436, 420 ]
+266 silly gunzTarPerm extractEntry lib/copy/copy.js
+267 silly gunzTarPerm modified mode [ 'lib/copy/copy.js', 436, 420 ]
+268 silly gunzTarPerm extractEntry lib/copy/index.js
+269 silly gunzTarPerm modified mode [ 'lib/copy/index.js', 436, 420 ]
+270 silly gunzTarPerm extractEntry lib/empty/index.js
+271 silly gunzTarPerm modified mode [ 'lib/empty/index.js', 436, 420 ]
+272 silly gunzTarPerm extractEntry lib/ensure/file.js
+273 silly gunzTarPerm modified mode [ 'lib/ensure/file.js', 436, 420 ]
+274 silly gunzTarPerm extractEntry lib/ensure/index.js
+275 silly gunzTarPerm modified mode [ 'lib/ensure/index.js', 436, 420 ]
+276 silly gunzTarPerm extractEntry lib/ensure/link.js
+277 silly gunzTarPerm modified mode [ 'lib/ensure/link.js', 436, 420 ]
+278 silly gunzTarPerm extractEntry lib/ensure/symlink-paths.js
+279 silly gunzTarPerm modified mode [ 'lib/ensure/symlink-paths.js', 436, 420 ]
+280 silly gunzTarPerm extractEntry lib/ensure/symlink-type.js
+281 silly gunzTarPerm modified mode [ 'lib/ensure/symlink-type.js', 436, 420 ]
+282 silly gunzTarPerm extractEntry lib/ensure/symlink.js
+283 silly gunzTarPerm modified mode [ 'lib/ensure/symlink.js', 436, 420 ]
+284 silly gunzTarPerm extractEntry lib/fs/index.js
+285 silly gunzTarPerm modified mode [ 'lib/fs/index.js', 436, 420 ]
+286 silly gunzTarPerm extractEntry lib/index.js
+287 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+288 silly gunzTarPerm extractEntry lib/json/index.js
+289 silly gunzTarPerm modified mode [ 'lib/json/index.js', 436, 420 ]
+290 silly gunzTarPerm extractEntry lib/json/jsonfile.js
+291 silly gunzTarPerm modified mode [ 'lib/json/jsonfile.js', 436, 420 ]
+292 silly gunzTarPerm extractEntry lib/json/output-json-sync.js
+293 silly gunzTarPerm modified mode [ 'lib/json/output-json-sync.js', 436, 420 ]
+294 silly gunzTarPerm extractEntry lib/json/output-json.js
+295 silly gunzTarPerm modified mode [ 'lib/json/output-json.js', 436, 420 ]
+296 silly gunzTarPerm extractEntry lib/mkdirs/index.js
+297 silly gunzTarPerm modified mode [ 'lib/mkdirs/index.js', 436, 420 ]
+298 silly gunzTarPerm extractEntry lib/mkdirs/mkdirs-sync.js
+299 silly gunzTarPerm modified mode [ 'lib/mkdirs/mkdirs-sync.js', 436, 420 ]
+300 silly gunzTarPerm extractEntry lib/mkdirs/mkdirs.js
+301 silly gunzTarPerm modified mode [ 'lib/mkdirs/mkdirs.js', 436, 420 ]
+302 silly gunzTarPerm extractEntry lib/mkdirs/win32.js
+303 silly gunzTarPerm modified mode [ 'lib/mkdirs/win32.js', 436, 420 ]
+304 silly gunzTarPerm extractEntry lib/move-sync/index.js
+305 silly gunzTarPerm modified mode [ 'lib/move-sync/index.js', 436, 420 ]
+306 silly gunzTarPerm extractEntry lib/move/index.js
+307 silly gunzTarPerm modified mode [ 'lib/move/index.js', 436, 420 ]
+308 silly gunzTarPerm extractEntry lib/output/index.js
+309 silly gunzTarPerm modified mode [ 'lib/output/index.js', 436, 420 ]
+310 silly gunzTarPerm extractEntry lib/path-exists/index.js
+311 silly gunzTarPerm modified mode [ 'lib/path-exists/index.js', 436, 420 ]
+312 silly gunzTarPerm extractEntry lib/remove/index.js
+313 silly gunzTarPerm modified mode [ 'lib/remove/index.js', 436, 420 ]
+314 silly gunzTarPerm extractEntry lib/remove/rimraf.js
+315 silly gunzTarPerm modified mode [ 'lib/remove/rimraf.js', 436, 420 ]
+316 silly gunzTarPerm extractEntry lib/util/buffer.js
+317 silly gunzTarPerm modified mode [ 'lib/util/buffer.js', 436, 420 ]
+318 silly gunzTarPerm extractEntry lib/util/utimes.js
+319 silly gunzTarPerm modified mode [ 'lib/util/utimes.js', 436, 420 ]
+320 silly gunzTarPerm extractEntry LICENSE
+321 silly gunzTarPerm extractEntry README.md
+322 silly gunzTarPerm extractEntry package.json
+323 silly gunzTarPerm modified mode [ 'package.json', 384, 420 ]
+324 silly gunzTarPerm extractEntry cli.js
+325 silly gunzTarPerm modified mode [ 'cli.js', 384, 420 ]
+326 silly gunzTarPerm extractEntry electron.d.ts
+327 silly gunzTarPerm modified mode [ 'electron.d.ts', 384, 420 ]
+328 silly gunzTarPerm extractEntry usage.txt
+329 silly gunzTarPerm extractEntry index.js
+330 silly gunzTarPerm modified mode [ 'index.js', 384, 420 ]
+331 silly gunzTarPerm extractEntry yarn.lock
+332 silly gunzTarPerm extractEntry bin/electron-installer-dmg.js
+333 silly gunzTarPerm extractEntry install.js
+334 silly gunzTarPerm modified mode [ 'install.js', 384, 420 ]
+335 silly gunzTarPerm extractEntry LICENSE
+336 silly gunzTarPerm modified mode [ 'LICENSE', 384, 420 ]
+337 silly gunzTarPerm extractEntry README.md
+338 silly gunzTarPerm modified mode [ 'README.md', 384, 420 ]
+339 silly gunzTarPerm extractEntry resources/mac/atom.icns
+340 silly gunzTarPerm extractEntry resources/mac/background.png
+341 silly gunzTarPerm extractEntry src/index.js
+342 silly gentlyRm /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-497f609c/node_modules is being purged
+343 verbose gentlyRm don't care about contents; nuking /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-497f609c/node_modules
+344 silly gentlyRm /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-installer-dmg-8af8d95e/node_modules is being purged
+345 verbose gentlyRm don't care about contents; nuking /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-installer-dmg-8af8d95e/node_modules
+346 silly gentlyRm /home/alumnos/sfuente/electron_prueba/node_modules/.staging/fs-extra-65abadb9/node_modules is being purged
+347 verbose gentlyRm don't care about contents; nuking /home/alumnos/sfuente/electron_prueba/node_modules/.staging/fs-extra-65abadb9/node_modules
+348 silly doParallel preinstall 3
+349 silly preinstall electron@4.1.4 /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-497f609c
+350 info lifecycle electron@4.1.4~preinstall: electron@4.1.4
+351 silly preinstall fs-extra@6.0.1 /home/alumnos/sfuente/electron_prueba/node_modules/.staging/fs-extra-65abadb9
+352 info lifecycle fs-extra@6.0.1~preinstall: fs-extra@6.0.1
+353 silly preinstall electron-installer-dmg@2.0.0 /home/alumnos/sfuente/electron_prueba/node_modules/.staging/electron-installer-dmg-8af8d95e
+354 info lifecycle electron-installer-dmg@2.0.0~preinstall: electron-installer-dmg@2.0.0
+355 silly lifecycle electron@4.1.4~preinstall: no script for preinstall, continuing
+356 silly lifecycle fs-extra@6.0.1~preinstall: no script for preinstall, continuing
+357 silly lifecycle electron-installer-dmg@2.0.0~preinstall: no script for preinstall, continuing
+358 silly doReverseSerial remove 0
+359 silly doSerial move 0
+360 silly doSerial finalize 3
+361 silly finalize /home/alumnos/sfuente/electron_prueba/node_modules/electron
+362 verbose unlock done using /home/alumnos/sfuente/.npm/_locks/staging-e81e659e1e18cf75.lock for /home/alumnos/sfuente/electron_prueba/node_modules/.staging
+363 silly rollbackFailedOptional Starting
+364 silly rollbackFailedOptional Finishing
+365 silly runTopLevelLifecycles Starting
+366 silly runTopLevelLifecycles Finishing
+367 silly install printInstalled
+368 warn optional Skipping failed optional dependency /electron-installer-dmg/appdmg:
+369 warn notsup Not compatible with your operating system or architecture: appdmg@0.5.2
+370 warn electron_prueba@1.0.0 No repository field.
+371 verbose stack Error: ENOTEMPTY: directory not empty, rename '/home/alumnos/sfuente/electron_prueba/node_modules/electron' -> '/home/alumnos/sfuente/electron_prueba/node_modules/.electron.DELETE'
+371 verbose stack     at moveAway (/usr/share/npm/lib/install/action/finalize.js:38:5)
+371 verbose stack     at destStatted (/usr/share/npm/lib/install/action/finalize.js:27:7)
+371 verbose stack     at FSReqWrap.oncomplete (fs.js:153:5)
+371 verbose stack
+371 verbose stack Error: ENOTEMPTY: directory not empty, rename '/home/alumnos/sfuente/electron_prueba/node_modules/electron' -> '/home/alumnos/sfuente/electron_prueba/node_modules/.electron.DELETE'
+372 verbose cwd /home/alumnos/sfuente/electron_prueba
+373 error Linux 4.15.0-46-generic
+374 error argv "/usr/bin/node" "/usr/bin/npm" "install" "electron-installer-dmg" "--save-dev"
+375 error node v8.10.0
+376 error npm  v3.5.2
+377 error path /home/alumnos/sfuente/electron_prueba/node_modules/electron
+378 error code ENOTEMPTY
+379 error errno -39
+380 error syscall rename
+381 error ENOTEMPTY: directory not empty, rename '/home/alumnos/sfuente/electron_prueba/node_modules/electron' -> '/home/alumnos/sfuente/electron_prueba/node_modules/.electron.DELETE'
+382 error If you need help, you may report this error at:
+382 error     <https://github.com/npm/npm/issues>
+383 verbose exit [ -39, true ]
