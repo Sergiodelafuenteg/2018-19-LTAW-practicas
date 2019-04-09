@@ -20,9 +20,9 @@ function PeticionJSON(gender) {
     function find() {
         var box = document.getElementById('box');
         box.addEventListener('keydown', (event) => {
-            var x = event.key;
-            console.log(x);
-            gender_array = people.results.filter(person => person.name.first[0] == x);
+            var presskey = event.key;
+            console.log(presskey);
+            gender_array = people.results.filter(person => person.name.first[0] == presskey);
             console.log(gender_array);
         })
     }
