@@ -2,21 +2,21 @@
     "Bicicletas":[ 
         {
             "id": "1",
-            "image": "/static/images/bicicletas/bici3.png",
+            "image": "/images/bicicletas/bici3.png",
             "name": "BMX305",
             "price": "299.0",
             "stock": "11"
         },
         {
             "id": "2",
-            "image": "/static/images/bicicletas/bici2.png",
+            "image": "/images/bicicletas/bici2.png",
             "name": "BMX345",
             "price": "399.0",
             "stock": "13"
         },
         {
             "id": "3",
-            "image": "/static/images/bicicletas/bici1.png",
+            "image": "/images/bicicletas/bici1.png",
             "name": "Urban789",
             "price": "199.0",
             "stock": "12"
@@ -26,7 +26,7 @@
         {
             "author": "Jimi Hendrix",
             "id": "1",
-            "image": "/static/images/discos/disco1.png",
+            "image": "/images/discos/disco1.png",
             "name": "Electric Ladyland",
             "price": "8.0",
             "stock": "5"
@@ -34,7 +34,7 @@
         {
             "author": "David bowie",
             "id": "2",
-            "image": "/static/images/discos/disco2.png",
+            "image": "/images/discos/disco2.png",
             "name": "Space Oddity",
             "price": "8.0",
             "stock": "7"
@@ -42,7 +42,7 @@
         {
             "author": "Iggy Pop & the Stooges",
             "id": "3",
-            "image": "/static/images/discos/disco3.png",
+            "image": "/images/discos/disco3.png",
             "name": "Raw Power",
             "price": "5.0",
             "stock": "14"
@@ -52,7 +52,7 @@
         {
             "author": "John Kennedy Toole",
             "id": "1",
-            "image": "/static/images/libros/lcn.png",
+            "image": "/images/libros/lcn.png",
             "name": "La conjura de los necios",
             "price": "8.0",
             "stock": "4"
@@ -60,7 +60,7 @@
         {
             "author": "Aldous Huxley",
             "id": "2",
-            "image": "/static/images/libros/umf.png",
+            "image": "/images/libros/umf.png",
             "name": "Un Mundo Feliz",
             "price": "9.0",
             "stock": "12"
@@ -68,7 +68,7 @@
         {
             "author": "Vazquez Figueroa",
             "id": "3",
-            "image": "/static/images/libros/panam.png",
+            "image": "/images/libros/panam.png",
             "name": "Panama Panama",
             "price": "8.0",
             "stock": "7"

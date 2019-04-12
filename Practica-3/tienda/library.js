@@ -1,20 +1,20 @@
 
 var Cesta = [];
 
-function PeticionJSON(gender) {
+function PeticionJSON(Categor) {
     // manejamos la peticion para la "tienda"
     // usamos el api randomuser por comodidad
     document.getElementById('box').style.display = 'inline-block';
     find();
     var request = new XMLHttpRequest();
-    request.open("GET", "https://randomuser.me/api/?results=50", false);
+    request.open("GET", "products.json", false);
     request.send()
     console.log(request.responseType);
-    var people = JSON.parse(request.responseText);
-    console.log(people);
+    var results = JSON.parse(request.responseText);
+    console.log(Object.keys(results)[2]);
     // creamos dos subgrupos mujeres y hombres
-    var gender_array = people.results.filter(person => person.gender == gender);
-    console.log(gender_array);
+    var Categor_array = results[Categor]
+    console.log(Categor_array);
     document.getElementById("visor").innerHTML = ""
     // añadimos handler para caja de busqueda
     function find() {
@@ -22,12 +22,12 @@ function PeticionJSON(gender) {
         box.addEventListener('keydown', (event) => {
             var presskey = event.key;
             console.log(presskey);
-            gender_array = people.results.filter(person => person.name.first[0] == presskey);
-            console.log(gender_array);
+            Categor_array = results.filter(obj => obj.name[0] == presskey);
+            console.log(Categor_array);
         })
     }
     // Montamos el array de "productos"
-    gender_array.forEach(user => {
+    Categor_array.forEach(user => {
         // Creamos los elementos
         let productos = document.createElement("ul");
         let prod = document.createElement("div");
@@ -35,13 +35,13 @@ function PeticionJSON(gender) {
         let text_name = document.createElement("span");        
         let text_price = document.createElement("span");        
         let butt_add = document.createElement("button");                
-        let name = document.createTextNode('  ' + user.name.first);
-        let price = document.createTextNode(user.dob.age + '€')
+        let name = document.createTextNode('  ' + user.name);
+        let price = document.createTextNode(user.price + '€')
         butt_add.innerHTML = "+";
         // Los incorporamos en el DOM
         text_name.appendChild(name);
         text_price.appendChild(price);
-        image.src = user.picture.large;
+        image.src = user.image;
         // image.style.textAlign = "left";
         prod.appendChild(image);
         image.setAttribute("class", "image");
@@ -57,9 +57,9 @@ function PeticionJSON(gender) {
         document.getElementById('visor').appendChild(productos);
         // Creamos un objeto producto para el array
         var prod_cesta = {
-            name : user.name.first,
-            image : user.picture.large,
-            precio : user.dob.age
+            name : user.name,
+            image : user.image,
+            precio : user.price
         }
         Cesta.push(prod_cesta)
     });
@@ -72,12 +72,13 @@ function Abrircesta() {
 
 }
 function CargarJsonLocal(params) {
+    var hu = 'Bicicletas'
     var request2 = new XMLHttpRequest();
     request2.open("GET", "products.json", false);
     request2.send()
     console.log(request2.responseType);
-    var people2 = JSON.parse(request2.responseText);
-    console.log(people2);
+    var results2 = JSON.parse(request2.responseText);
+    console.log(results2[hu]);
 }
 
 function finder() {
