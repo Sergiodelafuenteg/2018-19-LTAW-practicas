@@ -82,5 +82,20 @@ function CargarJsonLocal(params) {
 }
 
 function finder() {
-    
+    var request2 = new XMLHttpRequest();
+    request2.open("GET", "products.json", false);
+    request2.send();
+    console.log(request2.responseType);
+    var results2 = JSON.parse(request2.responseText);
+    var filtered_array = [];
+
+    for (const result in results2) {        
+        results2[result].forEach(element => {
+            filtered_array.push(element.name)
+        });
+        // if (results2.hasOwnProperty(result)) {
+        //     filtered_array.push(results.filter(obj => obj.name[0] == presskey))
+        // }
+    }
+    console.log(filtered_array);
 }
