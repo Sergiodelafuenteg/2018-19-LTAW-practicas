@@ -16,12 +16,13 @@
         <h2>Las mejores biografias</h2>
                 
         <div style="text-align:center">
-            <button class="button" onclick="PeticionJSON('Bicicletas')">Bicicletas</button>
-            <button class="button" onclick="PeticionJSON('Discos')">Discos</button>    
-            <button class="button" onclick="PeticionJSON('Libros')">Libros</button>
+            <button class="button" onclick="Load_Prod('Bicicletas')">Bicicletas</button>
+            <button class="button" onclick="Load_Prod('Discos')">Discos</button>    
+            <button class="button" onclick="Load_Prod('Libros')">Libros</button>
         </div>
         <button onclick="finder()"></button>
-        <input style="display:none" id="box" type="search">
+        <input onclick="finder()" list="productos" style="display:none" style="appearance:none" id="box" type="search">
+        <datalist id = "productos"></datalist>
     </div>    
     <div id="visor"></div>
     <!-- Scripts -->
