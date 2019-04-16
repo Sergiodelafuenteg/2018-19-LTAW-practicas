@@ -10,6 +10,17 @@ http.createServer((req,res) => {
         var stream = fs.createReadStream('library.html', 'utf8');
         stream.pipe(res);
     }
+    if (req.url == "/search?") {
+        
+        req.on('data', chunk => {
+            //-- Leer los datos (convertir el buffer a cadena)
+            data = chunk.toString();
+        });
+        console.log(data);
+        res.writeHead(200, { "Content-Type": "text/html" });
+        var stream = fs.createReadStream("library.html", "utf8");
+        stream.pipe(res);
+    }
     if (req.url.split(".")[1] == 'html') {
         console.log('html');
         res.writeHead(200, { "Content-Type": "text/html" });

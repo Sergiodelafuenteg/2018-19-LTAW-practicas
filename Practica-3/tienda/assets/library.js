@@ -15,7 +15,7 @@ function Load_Prod(Categor) {
  
     document.getElementById('box').style.display = 'inline-block';
     // creamos dos subgrupos mujeres y hombres
-    var results = CargarJsonLocal("products.json")
+    var results = CargarJsonLocal("assets/products.json")
     var Categor_array = results[Categor]
     console.log(Categor_array);
     // ponemos visor en blanco. Listo para insertar
@@ -70,7 +70,7 @@ function Abrircesta() {
     console.log(Cesta);
     
     var image = document.getElementById('cesta_icon')
-    image.src = "cesta1.png";
+    image.src = "assets/cesta1.png";
 
 }
 
@@ -79,9 +79,7 @@ function finder() {
     var input = document.getElementById("productos");
     var results = CargarJsonLocal("products.json")
     var filtered_array = [];
-    function huhu(params) {
-      console.log("kokoko");
-    }
+    
     for (const result in results) {        
         results[result].forEach(element => {
             filtered_array.push(element.name)

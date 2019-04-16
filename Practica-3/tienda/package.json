@@ -16,6 +16,9 @@
   },
   "scripts": {
     "start": "node library-server.js",
-    "test": "node -v"  
+    "test": "node -v"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
