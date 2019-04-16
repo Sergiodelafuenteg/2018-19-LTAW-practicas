@@ -16,16 +16,18 @@
             onclick="window.location.href='/shop-cart.html'" 
             src="assets/cesta0.png" alt="cesta_vacia">
 
+        <form action="/search" method="POST">
+            <input onclick="finder()" list="productos" name="search" value="jojo" id="box" type="text">
+            <input type="submit" name="submit">
+            <datalist id="productos"></datalist>
+        </form>
+
         <div style="text-align:center">
             <button class="button" onclick="Load_Prod('Bicicletas')">Bicicletas</button>
             <button class="button" onclick="Load_Prod('Discos')">Discos</button>    
             <button class="button" onclick="Load_Prod('Libros')">Libros</button>
         </div>
         <button onclick="finder()"></button>
-        <form action="/search" method="POST">
-            <input onclick="finder()" list="productos" style="display:none" style="appearance:none" id="box" type="search">
-            <datalist id="productos"></datalist>
-        </form>
         
     </div>    
     <div id="visor"></div>

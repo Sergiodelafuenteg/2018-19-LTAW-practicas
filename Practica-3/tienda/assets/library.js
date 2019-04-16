@@ -13,7 +13,7 @@ function CargarJsonLocal(file) {
 // funcion para cargar los productos categorizados
 function Load_Prod(Categor) {
  
-    document.getElementById('box').style.display = 'inline-block';
+    
     // creamos dos subgrupos mujeres y hombres
     var results = CargarJsonLocal("assets/products.json")
     var Categor_array = results[Categor]
@@ -77,7 +77,7 @@ function Abrircesta() {
 function finder() {
     var dataList = document.getElementById("productos");
     var input = document.getElementById("productos");
-    var results = CargarJsonLocal("products.json")
+    var results = CargarJsonLocal("assets/products.json")
     var filtered_array = [];
     
     for (const result in results) {        
