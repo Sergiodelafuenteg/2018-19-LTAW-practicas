@@ -16,21 +16,27 @@ app.post("/search", (req, res) => {
     var products = JSON.stringify(allproducts)
     let namee = req.body.search
     console.log(namee);
+    // console.log(allproducts);
+    
     
     console.log("eto me han pedido " + JSON.stringify(req.body));
+    var x = Searcher(namee, allproducts);
+    console.log(x);
     
-    res.send(products);
+    res.send(x);
 });
 
 // metodos
 function Searcher(name, results) {
+    var search;
     for (const result in results) {
         results[result].forEach(element => {
             if (name === element.name) {
-                return element
+                search = element
             }
         })
     }
+    return search
 }
  
 app.listen(PUERTO);
