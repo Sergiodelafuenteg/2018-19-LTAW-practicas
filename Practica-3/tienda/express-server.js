@@ -13,15 +13,20 @@ app.use(express.json())
 
 // Peticiones
 app.get('/', (req,res) => {res.sendFile(__dirname + '/views/library.html')})
-
+// Buscador
 app.post("/search", (req, res) => {
-    
+    var elements = []
     console.log("eto me han pedido " + JSON.stringify(req.body));
     var element = Searcher(req.body.search, allproducts);
+    elements.push(element)
     console.log(element);
-    res.render('products', {imgsrc:element.image, name:element.name, price:element.price});
+    res.render('products', {products:elements});
     
 });
+// Categorias
+app.get("/bicicletas", (req,res) => {res.render('products', {products:allproducts['Bicicletas']})})
+app.get("/discos", (req, res) => {res.render("products", { products: allproducts["Discos"] });});
+app.get("/libros", (req, res) => {res.render("products", { products: allproducts["Libros"] });});
 
 // metodos
 function Searcher(name, results) {

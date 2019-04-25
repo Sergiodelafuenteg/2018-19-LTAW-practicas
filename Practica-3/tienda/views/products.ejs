@@ -13,17 +13,22 @@
 
 <body>
     <div class="container">
+        <img class="home" id="home_icon" onclick="window.location.href='/'" src="assets/home.png"
+            alt="home">
         <h1>Library</h1>
         <img class="cesta" id="cesta_icon" onclick="window.location.href='/shop-cart.html'" src="assets/cesta0.png"
             alt="cesta_vacia">
 
     </div>
-    <div id="visor" class = "prod">
-        <img src="<%= imgsrc %>" alt="" class = "image">
-        <span class = "name"><%= name %></span>
-        <span class = "price"><%= price %>  €</span>
+    <% products.forEach(element => {%>
+        <div id="visor" class = "prod">
+            <img src="<%= element.image %>" alt="" class = "image">
+            <span class = "name"><%= element.name %></span>
+            <span class = "price"><%= element.price %>  €</span>
         <button class = "butt_add">+</button>
     </div>
+    <%}); %>
+
     <!-- Scripts -->
     <script src="assets/library.js"></script>
 </body>
