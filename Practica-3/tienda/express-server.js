@@ -4,6 +4,8 @@ const PUERTO = 8080;
 const app = express();
 const allproducts = require("./assets/products.json");
 
+app.set('view engine', 'ejs')
+
 // Middleware
 app.use('/assets', express.static('assets'))
 app.use(express.urlencoded())
@@ -13,17 +15,12 @@ app.use(express.json())
 app.get('/', (req,res) => {res.sendFile(__dirname + '/views/library.html')})
 
 app.post("/search", (req, res) => {
-    var products = JSON.stringify(allproducts)
-    let namee = req.body.search
-    console.log(namee);
-    // console.log(allproducts);
-    
     
     console.log("eto me han pedido " + JSON.stringify(req.body));
-    var x = Searcher(namee, allproducts);
-    console.log(x);
+    var element = Searcher(req.body.search, allproducts);
+    console.log(element);
+    res.render('products', {imgsrc:element.image, name:element.name, price:element.price});
     
-    res.send(x);
 });
 
 // metodos

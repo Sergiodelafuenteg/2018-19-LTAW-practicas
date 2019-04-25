@@ -9,7 +9,7 @@
 
     <title>Library</title>
 </head>
-<body>
+<body onload="finder()">
     <div class="container">
         <h1>Library</h1>
         <img class="cesta" id="cesta_icon" 
@@ -17,7 +17,7 @@
             src="assets/cesta0.png" alt="cesta_vacia">
 
         <form action="/search" method="POST">
-            <input onclick="finder()" list="productos" name="search" value="BMX305" id="box" type="text">
+            <input list="productos" name="search" id="box" type="text">
             <input type="submit" name="submit">
             <datalist id="productos"></datalist>
         </form>

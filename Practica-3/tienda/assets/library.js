@@ -10,10 +10,15 @@ function CargarJsonLocal(file) {
   return JSON_results;
 }
 
+function enviar() {
+    var x = CargarJsonLocal('search');
+    console.log('man mandao...=> ' + x);
+    
+}
+
 // funcion para cargar los productos categorizados
 function Load_Prod(Categor) {
- 
-    
+  
     // creamos dos subgrupos mujeres y hombres
     var results = CargarJsonLocal("assets/products.json")
     var Categor_array = results[Categor]
@@ -86,7 +91,6 @@ function finder() {
             // Create a new <option> element.
             var option = document.createElement('option');
             option.value = element.name;
-            option.onclick = "huhu()";
             dataList.appendChild(option);
         });
         

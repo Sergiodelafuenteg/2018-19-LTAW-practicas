@@ -7,18 +7,19 @@
   ],
   "version": "0.0.1",
   "author": "Sergio de la fuente",
-  "main": "library-server.js",
+  "main": "express-server.js",
   "devDependencies": {},
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sergiodelafuenteg/2018-19-LTAW-practicas/tree/master/Practica-1"
+    "url": "https://github.com/Sergiodelafuenteg/2018-19-LTAW-practicas/tree/master/Practica-3"
   },
   "scripts": {
-    "start": "node library-server.js",
+    "start": "node express-server.js",
     "test": "node -v"
   },
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.4"
   }
 }
