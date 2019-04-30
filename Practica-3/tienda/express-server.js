@@ -12,7 +12,7 @@ app.use(express.urlencoded())
 app.use(express.json())
 
 // Peticiones
-app.get('/', (req,res) => {res.sendFile(__dirname + '/views/library.html')})
+app.get('/', (req,res) => {res.render('library')})
 // Buscador
 app.post("/search", (req, res) => {
     var elements = []

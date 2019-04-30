@@ -83,20 +83,19 @@ function finder() {
     var dataList = document.getElementById("productos");
     var input = document.getElementById("productos");
     var results = CargarJsonLocal("assets/products.json")
-    var filtered_array = [];
     
     for (const result in results) {        
         results[result].forEach(element => {
-            filtered_array.push(element.name)
             // Create a new <option> element.
             var option = document.createElement('option');
             option.value = element.name;
             dataList.appendChild(option);
-        });
-        
-        // if (results.hasOwnProperty(result)) {
-        //     filtered_array.push(results.filter(obj => obj.name[0] == presskey))
-        // }
+        });   
     }
-    console.log(filtered_array);
+    console.log(results);
+    
+}
+
+function myfun() {
+    document.cookie = "nombre=Mario; path=/";
 }

@@ -11,6 +11,7 @@
 </head>
 <body onload="finder()">
     <div class="container">
+    
         <h1>Library</h1>
         <img class="cesta" id="cesta_icon" 
             onclick="window.location.href='/shop-cart.html'" 
@@ -18,7 +19,7 @@
 
         <form action="/search" method="POST">
             <input list="productos" name="search" id="box" type="text">
-            <input type="submit" name="submit">
+            <input type="submit" name="submit" value="search">
             <datalist id="productos"></datalist>
         </form>
 
@@ -27,7 +28,7 @@
             <button class="button" onclick="window.location.href = '/discos'">Discos</button>    
             <button class="button" onclick="window.location.href = '/libros'">Libros</button>
         </div>
-        <button onclick="window.location.href = '/bicicletas'"></button>
+        <button onclick="myfun()"></button>
         
     </div>    
     <div id="visor"></div>
