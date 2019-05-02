@@ -97,5 +97,16 @@ function finder() {
 }
 
 function myfun() {
-    document.cookie = "nombre=Mario; path=/";
+    document.cookie = "nombre=Belencita";
+    document.cookie = "nombre2=Sergio";
+}
+
+function log_cookie() {
+    var username = document.getElementById('logbox').value
+    document.cookie = "username = " + username;
+}
+
+function close_session() {
+    document.cookie = "username = ; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+    window.location.href = '/';
 }

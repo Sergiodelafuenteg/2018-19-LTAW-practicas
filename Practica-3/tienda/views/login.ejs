@@ -20,14 +20,14 @@
             alt="cesta_vacia">
 
     </div>
-    <% products.forEach(element => {%>
-        <div id="visor" class = "prod">
-            <img src="<%= element.image %>" alt="" class = "image">
-            <span class = "name"><%= element.name %></span>
-            <span class = "price"><%= element.price %>  €</span>
-        <button class = "butt_add">+</button>
+    <!-- Login -->
+    <div id="logspace">
+        <form action="/setlogin" method="post">
+            <input type="text" name="loguser" id="logbox"><br>
+            <input type="submit" value="Registrarse"id="subbox" onclick = "log_cookie()">
+        </form> 
     </div>
-    <%}); %>
+    
 
     <!-- Scripts -->
     <script src="assets/tienda.js"></script>

@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/library.css">
+    <link rel="stylesheet" href="assets/tienda.css">
     <link rel="icon" type="image/png" href="assets/favicon.ico" />
 
-    <title>Library</title>
+    <title>Tienda</title>
 </head>
 <body onload="finder()">
     <div class="container">
-    
-        <h1>Library</h1>
+        <% if (login) { %>
+            <p id = "logname"> Usuario Registrado: <%=logname%></p>
+            <button class="button" onclick="close_session()">Cerrar Sesión</button>
+        <% } else { %>
+            <button class="button" onclick="window.location.href = '/login'">Login</button>    
+        <%} %>
+        
+        <h1>Tienda</h1>
         <img class="cesta" id="cesta_icon" 
             onclick="window.location.href='/shop-cart.html'" 
             src="assets/cesta0.png" alt="cesta_vacia">
 
         <form action="/search" method="POST">
-            <input list="productos" name="search" id="box" type="text">
-            <input type="submit" name="submit" value="search">
+            <input list="productos" name="search" id="box" type="text" class = "searchinput" placeholder = "Que deseas?">
+            <input type="submit" name="submit" value="search" class = "button">
             <datalist id="productos"></datalist>
         </form>
 
@@ -33,6 +39,6 @@
     </div>    
     <div id="visor"></div>
     <!-- Scripts -->
-    <script src="assets/library.js"></script>    
+    <script src="assets/tienda.js"></script>    
 </body>
 </html>

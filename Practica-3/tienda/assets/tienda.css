@@ -7,6 +7,7 @@ h2 {
     text-align: center;
     padding: 30px;
     color: #ffffff;
+    text-shadow: 2px 0 0 #18ab29;
 }
 
 .container {
@@ -15,7 +16,7 @@ h2 {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .button {
@@ -46,9 +47,9 @@ h1 {
 .home {
     cursor: pointer;
     width: 10%;
-    height: 10%;
-    position: relative;
-    top: 20px;
+    height: 1%;
+    /* position: relative; */
+    top: 10px;
     left: 20px;
 }
 
@@ -129,4 +130,53 @@ h1 {
 .butt_add:active {
     position: relative;
     top: 1px;
+}
+
+#logspace {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logbox {
+    width: 201px;
+    height: 2em;
+}
+
+#subbox {
+    width: 207px;
+    height: 2em;
+    font-size: 8em
+}
+
+#logname {
+    background-color: #44c767;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.searchinput {
+    background-color: #ffffff;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
 }
