@@ -71,9 +71,9 @@ function Push_Product(item) {
 }
 
 
-function Abrircesta() {
-    console.log(Cesta);
-    
+function add_article(name) {
+    console.log(name);
+    document.cookie = "shop" + name + "=" + name;    
     var image = document.getElementById('cesta_icon')
     image.src = "assets/cesta1.png";
 

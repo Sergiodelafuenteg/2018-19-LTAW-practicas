@@ -43,6 +43,12 @@ app.get("/bicicletas", (req,res) => {res.render('products', {products: allproduc
 app.get("/discos", (req, res) => {res.render("products", { products: allproducts["Discos"] });});
 app.get("/libros", (req, res) => {res.render("products", { products: allproducts["Libros"] });});
 
+// Shop-cart
+app.get("/shop-cart", (req, res) => {
+    var shop_elements = cart_builder(req.cookies, allproducts)
+    res.render("shop-cart", { products: shop_elements });
+});
+
 // metodos
 function Searcher(name, results) {
     var search;
@@ -54,6 +60,16 @@ function Searcher(name, results) {
         })
     }
     return search
+}
+function cart_builder(shopcart, results) {
+    var elements = [];
+    for (const result in shopcart) {
+        if (result.includes(result.match(/^shop/))) {
+            var element = Searcher(shopcart[result], results);
+            elements.push(element);            
+        }
+    }
+    return elements;
 }
  
 app.listen(PUERTO);

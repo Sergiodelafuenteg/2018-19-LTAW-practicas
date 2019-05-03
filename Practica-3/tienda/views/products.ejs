@@ -16,7 +16,7 @@
         <img class="home" id="home_icon" onclick="window.location.href='/'" src="assets/home.png"
             alt="home">
         <h1>Tienda</h1>
-        <img class="cesta" id="cesta_icon" onclick="window.location.href='/shop-cart.html'" src="assets/cesta0.png"
+        <img class="cesta" id="cesta_icon" onclick="window.location.href='/shop-cart'" src="assets/cesta0.png"
             alt="cesta_vacia">
 
     </div>
@@ -25,8 +25,8 @@
             <img src="<%= element.image %>" alt="" class = "image">
             <span class = "name"><%= element.name %></span>
             <span class = "price"><%= element.price %>  €</span>
-        <button class = "butt_add">+</button>
-    </div>
+            <button class = "butt_add" onclick = "add_article('<%= element.name %>')">+</button>
+        </div>
     <%}); %>
 
     <!-- Scripts -->
