@@ -80,10 +80,6 @@ function add_article(name) {
         alert("Por favor regístrate");
         window.location.href = '/login';
     }
-    
-    
-    
-
 }
 function del_article(name) {
   console.log(name);
@@ -125,4 +121,12 @@ function isLog() {
     } else {
         return false;
     }    
+}
+function Go_Cart() {
+  if (isLog()) {
+    window.location.href = "/shop-cart";
+  } else {
+    alert("Por favor regístrate");
+    window.location.href = "/login";
+  }
 }
