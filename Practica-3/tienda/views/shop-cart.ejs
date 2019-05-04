@@ -23,10 +23,15 @@
             <img src="<%= element.image %>" alt="" class = "image">
             <span class = "name"><%= element.name %></span>
             <span class = "price"><%= element.price %>  €</span>
-            <button class = "butt_add">+</button>
+            <button class = "butt_sub" onclick = "del_article('<%= element.name %>')">-</button>
         </div>
     <%}); %>
-
+    <hr>
+    <div class="total">
+        <span>Total</span>
+        <span><%= total %>  €</span>
+        <button class="button" onclick="window.location.href = '/setpay'">Pagar</button>
+    </div>
     <!-- Scripts -->
     <script src="assets/tienda.js"></script>
 </body>

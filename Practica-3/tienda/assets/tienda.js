@@ -72,11 +72,23 @@ function Push_Product(item) {
 
 
 function add_article(name) {
-    console.log(name);
-    document.cookie = "shop" + name + "=" + name;    
-    var image = document.getElementById('cesta_icon')
-    image.src = "assets/cesta1.png";
+    if (isLog()) {
+        document.cookie = "shop" + name + "=" + name;
+        var image = document.getElementById("cesta_icon");
+        image.src = "assets/cesta1.png";    
+    } else {
+        alert("Por favor regístrate");
+        window.location.href = '/login';
+    }
+    
+    
+    
 
+}
+function del_article(name) {
+  console.log(name);
+  document.cookie = "shop" + name + "= " + name +  "; Expires=Thu, 01 Jan 1970 00:00:01 GMT";
+  window.location.href = '/shop-cart'
 }
 
 function finder() {
@@ -96,11 +108,6 @@ function finder() {
     
 }
 
-function myfun() {
-    document.cookie = "nombre=Belencita";
-    document.cookie = "nombre2=Sergio";
-}
-
 function log_cookie() {
     var username = document.getElementById('logbox').value
     document.cookie = "username = " + username;
@@ -109,4 +116,13 @@ function log_cookie() {
 function close_session() {
     document.cookie = "username = ; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
     window.location.href = '/';
+}
+
+function isLog() {
+    var d = decodeURIComponent(document.cookie);    
+    if (d.includes(d.match(/username/))) {
+        return true;        
+    } else {
+        return false;
+    }    
 }

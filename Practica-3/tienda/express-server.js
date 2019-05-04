@@ -37,7 +37,16 @@ app.post("/search", (req, res) => {
     res.render('products', {products:elements});
     
 });
-app.post('/setlogin', (req, res) => {res.render('setlogin', {logname: req.cookies.username})})
+app.post('/setlogin', (req, res) => {
+    var message =
+      "Enhorabuena " + req.cookies.username + " has sido registrado satisfactoriamente.";
+    res.render('message', {message: message})
+})
+app.get("/setpay", (req, res) => {
+  var message =
+    "Enhorabuena " + req.cookies.username + " has sido realizado el pago satisfactoriamente.";
+  res.render("message", { message: message });
+});
 // Categorias
 app.get("/bicicletas", (req,res) => {res.render('products', {products: allproducts['Bicicletas']})})
 app.get("/discos", (req, res) => {res.render("products", { products: allproducts["Discos"] });});
@@ -46,7 +55,8 @@ app.get("/libros", (req, res) => {res.render("products", { products: allproducts
 // Shop-cart
 app.get("/shop-cart", (req, res) => {
     var shop_elements = cart_builder(req.cookies, allproducts)
-    res.render("shop-cart", { products: shop_elements });
+    total = TotalPrice(shop_elements);
+    res.render("shop-cart", { products: shop_elements, total: total });
 });
 
 // metodos
@@ -70,6 +80,13 @@ function cart_builder(shopcart, results) {
         }
     }
     return elements;
+}
+function TotalPrice(cart) {
+    var totalprice = 0
+    cart.forEach(element => {
+        totalprice += parseFloat(element.price);
+    });
+    return totalprice
 }
  
 app.listen(PUERTO);
