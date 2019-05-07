@@ -75,7 +75,8 @@ function add_article(name) {
     if (isLog()) {
         document.cookie = "shop" + name + "=" + name;
         var image = document.getElementById("cesta_icon");
-        image.src = "assets/cesta1.png";    
+        image.src = "assets/cesta1.png";
+        alert('Articulo añadido a la cesta')    
     } else {
         alert("Por favor regístrate");
         window.location.href = '/login';
