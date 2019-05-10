@@ -13,18 +13,18 @@
     <h1>CHAT</h1>
 
     <div id ="log_visor">
-        <h1>Registrate</h1>
+        <h1>Register</h1>
         <input type="text" name="name_log" id="name_log">
         <button onclick="Log()">Log</button>
     </div>
     
-    <div id = 'chat_panel' style="display:none">
+    <div id = 'chat_panel' style="display:inline-block">
         <div id="window">
             <div id="visor"></div>
         </div>
-        <input type="text" name="name" id="name">
         <input type="text" name="message" id="message">
         <button onclick="Send()">Send</button>
+        <button class="button_danger" onclick="Disconnect()">Disconnect</button>
     </div>
 
 

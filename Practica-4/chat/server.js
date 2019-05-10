@@ -12,8 +12,6 @@ app.use("/assets", express.static("assets"));
 
 app.get('/', (req, res) => {res.sendFile(__dirname + '/views/index.html');});
 
-app.get('/login', (req, res) => { res.sendFile(__dirname + '/views/login.html'); });
-
 // Socket
 
 var io = socket(server)
@@ -22,8 +20,14 @@ io.on('connection', (socket) => {
     console.log(socket.id, 'se ha conectado');
 
     socket.on('chat', data => {
-       socket.emit('chat', data);
-        
+       io.sockets.emit('chat', data);        
     })
-    
+    socket.on('welcome', data => {
+        var welcome_message = data + ' se ha unido.'
+        socket.broadcast.emit('welcome', welcome_message);
+    })
+    socket.on('bye', data => {
+        var bye_message = data + ' se ha ido.'
+        socket.broadcast.emit('bye', bye_message);
+    })
 })
