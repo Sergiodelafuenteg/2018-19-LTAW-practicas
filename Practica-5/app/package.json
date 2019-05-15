@@ -4,8 +4,12 @@
   "description": "chat app powered with electronjs",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "author": "Sergio de la fuente",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^5.0.1"
+  }
 }

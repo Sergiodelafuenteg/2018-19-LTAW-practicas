@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/chat.css">
+    <title>CHAT</title>
+</head>
+<body>
+    <!--  -->
+    
+    <h1>CHAT</h1>
+
+    <div id ="log_visor">
+        <h1>Register</h1>
+        <input type="text" name="name_log" id="name_log">
+        <button onclick="Log()">Log</button>
+    </div>
+    
+    <div id = 'chat_panel' style="display:inline-block">
+        <div id="window">
+            <div id="visor"></div>
+        </div>
+        <input type="text" name="message" id="message">
+        <button onclick="Send()">Send</button>
+        <button class="button_danger" onclick="Disconnect()">Disconnect</button>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="../assets/chat.js"></script>
+</body>
+</html>
