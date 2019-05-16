@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start server": "npm start --prefix chat & electron .",
     "start": "electron ."
   },
   "author": "Sergio de la fuente",
